@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+# Ignore PyCharm files
+.idea/
+__pycache__/
+.pytest_cache/
+
+# Ignore logs
+*.log
+
