@@ -4,55 +4,53 @@ Library     SeleniumLibrary
 *** Variables ***
 #************************************* ยื่นคำร้อง Manual ****************************************************
 ${ประเภทรายงาน}     xpath=//mat-select[@aria-labelledby='mat-select-value-1']
-${ปปง.1-01}     //*[@id="mat-option-1"]
-${รายงานเนื่องจาก_รายงานตัวช้า}      //*[@id="mat-radio-2-input"]
-${รายงานเนื่องจาก_อื่นๆ}    //*[@id="mat-radio-3-input"]
-${รายงานเนื่องจาก_อื่นๆ_ระบุ}   //*[@id="mat-input-3"]
+${ปปง.1-01}     xpath=//mat-option[@ng-reflect-value='1-01']
+${รายงานเนื่องจาก_รายงานตัวช้า}     xpath=//mat-radio-button[@ng-reflect-value='01']
+${รายงานเนื่องจาก_อื่นๆ}    xpath=//mat-radio-button[@ng-reflect-value='02']
+${รายงานเนื่องจาก_อื่นๆ_ระบุ}   xpath=//input[contains(@ng-reflect-maxlength, '200') and @aria-invalid='false']
 
-${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว}    //*[@id="mat-radio-51-input"]
-${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_ระบุประเภทบัตร}    //*[@id="mat-select-2"]
-${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_บัตรประจำตัวประชาชน}    //*[@id="mat-option-6"]
-${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_บัตรประจำตัวผู้เสียภาษีอากร}    //*[@id="mat-option-7"]
-${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_หนังสือเดินทาง}    //*[@id="mat-option-8"]
-${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_อื่นๆ}    //*[@id="mat-option-9"]
-${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_เลขบัตร}        //*[@id="mat-input-68"]
-${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_CIF}        //*[@id="mat-radio-52-input"]
-${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_ไม่ใช้ลูกค้าธนาคาร}     //*[@id="mat-radio-53-input"]
-${ยื่นคำร้องManual_ถัดไป}    /html/body/app-root/mat-drawer-container/mat-drawer-content/app-manual-report/mat-card/mat-card-content/div/div[14]/button
+${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว}    xpath=//mat-select[@aria-labelledby='mat-select-value-3']
+${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_บัตรประจำตัวประชาชน}   xpath=//mat-option[@ng-reflect-value'1']
+${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_บัตรประจำตัวผู้เสียภาษีอากร}   xpath=//mat-option[@ng-reflect-value'3']
+${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_หนังสือเดินทาง}  xpath=//mat-option[@ng-reflect-value'4']
+${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_อื่นๆ}   xpath=//mat-option[@ng-reflect-value='99']
+${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_เลขบัตร}  xpath=//input[@ng-reflect-maxlength='15']
+${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_CIF}  xpath=//mat-radio-button[@ng-reflect-value='CIF']
+${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_ไม่ใช้ลูกค้าธนาคาร}   xpath=//mat-radio-button[@ng-reflect-value="NOT_CUSTOMER"]
+${ยื่นคำร้องManual_ถัดไป}   xpath=//button[@mat-raised-button]
 
 #เหตุผลการรายงาน Mannual
-${เหตุผลการรายงาน Mannual_เหตุผลในการรายงาน}    //*[@id="mat-input-32"]
+${เหตุผลการรายงาน Mannual_เหตุผลในการรายงาน}  xpath=//textarea[@ng-reflect-maxlength='2000']
 
 #***************************ส่วนที่1****************************************
 
-${1.1_คำนำหน้าชื่อ}    //*[@id="mat-select-value-35"]
-${1.1_คำนำหน้าชื่อ_นาย}    //*[@id="mat-option-1074"]
-${1.1_คำนำหน้าชื่อ_นาง}    //*[@id="mat-option-1075"]
-${1.1_ชื่อ}    //*[@id="mat-input-37"]
-${1.1_ชื่อกลาง}     //*[@id="mat-input-38"]
-${1.1_นามสกุล}     //*[@id="mat-input-39"]
-${1.1_เอกสารประจำตัว_บัตรประจำตัว}      //*[@id="mat-radio-43-input"]
-${1.1_เอกสารประจำตัว_เลขที่}       //*[@id="mat-input-67"]
-${1.1_เอกสารประจำตัว_หนังสือเดินทาง}   //*[@id="mat-radio-44-input"]
-${1.1_เอกสารประจำตัว_อื่นๆ}        //*[@id="mat-radio-45-input"]
-${1.1_เอกสารประจำตัว_อื่นๆ_โปรดระบุ}        //*[@id="mat-input-66"]
-${1.1_ผู้ทำธุรกรรม_ทำธุรกกรมด้วยตนเอง}
-${1.1_ผู้ทำธุรกรรม_ทำธุรกรรมแทนผู้อื่น}
+${1.1_คำนำหน้าชื่อ}   xpath=//mat-form-fieldcontains(@class, 'mat-form-field-type-mat-select')]
+${1.1_คำนำหน้าชื่อ_นาย}  xpath=//mat-option[@ng-reflect-value='นาย']
+${1.1_คำนำหน้าชื่อ_นาง}  xpath=//mat-option[@ng-reflect-value='นาง']
+${1.1_ชื่อ}  xpath=//input[contains(@class, 'ng-tns-c165-10') and @ng-reflect-maxlength='250']
+${1.1_ชื่อกลาง}  xpath=//input[@ng-reflect-maxlength='100']
+${1.1_นามสกุล}   xpath=//input[contains(@class, 'ng-tns-c165-12') and @ng-reflect-maxlength='250']
+${1.1_เอกสารประจำตัว_บัตรประจำตัว}  xpath=//mat-radio-button[@ng-reflect-value='1']
+${1.1_เอกสารประจำตัว_เลขที่}   xpath=//input[@ng-reflect-maxlength='13']
+${1.1_เอกสารประจำตัว_หนังสือเดินทาง}   xpath=//mat-radio-button[@ng-reflect-value='4']
+${1.1_เอกสารประจำตัว_อื่นๆ}   xpath=//mat-radio-button[@ng-reflect-value='99']
+${1.1_เอกสารประจำตัว_อื่นๆ_โปรดระบุ}   xpath=//input[contains(@class, 'ng-tns-c165-55') and @ng-reflect-maxlength='100']
+${1.1_เอกสารประจำตัว_ทำธุรกรรมด้วยตนเอง}   xpath=//mat-radio-button[contains(@class, 'mat-radio-button mat-accent') and @ng-reflect-value='0']
+${1.1_ผู้ทำธุรกรรม_ทำธุรกรรมแทนผู้อื่น}    xpath=//mat-radio-button[contains(@class, 'mat-radio-button mat-accent ') and @ng-reflect-value='1']
 
-${1.2_ที่อยู่}
-${1.2_ประเทศ}
-${1.2_ที่อยู่_ประเทศ_ไทย}
-${1.2_ที่อยู่_ประเทศ_เกาหลีใต้}
-${1.2_ที่อยู่_ประเทศ_กำพูชา}
-${1.2_ที่อยู่_ประเทศ_จังหวัด}
-${1.2_ที่อยู่_ประเทศ_อำเภอ}
-${1.2_ที่อยู่_ประเทศ_ตำบล}
-${1.2_ที่อยู่_ประเทศ_รหัสไปรษณีย์}
+${1.2_ที่อยู่}   xpath=//input[@ng-reflect-maxlength='300']
+${1.2_ประเทศ}     xpath=//mat-form-field[contains(@class, 'mat-primary') and contains(@class, 'mat-form-field-appearance-legacy')]
+${1.2_ที่อยู่_ประเทศ_ไทย}  xpath=//mat-option[contains(@class, 'ng-tns-c241-17') and @ng-reflect-value='TH']
+${1.2_ที่อยู่_ประเทศ_เกาหลีใต้}   xpath=//mat-option[contains(@class, 'ng-tns-c241-17') and @ng-reflect-value='KR']
+${1.2_ที่อยู่_ประเทศ_จังหวัด}    xpath=//mat-option[contains(@class, 'ng-tns-c241-19') and @ng-reflect-value='10']
+${1.2_ที่อยู่_ประเทศ_อำเภอ}   xpath=//mat-option[contains(@class, 'ng-tns-c241-21') and @ng-reflect-value='30']
+${1.2_ที่อยู่_ประเทศ_ตำบล}     xpath=//mat-option[contains(@class, 'ng-tns-c241-23') and @ng-reflect-value='05']
+${1.2_ที่อยู่_ประเทศ_รหัสไปรษณีย์}  xpath=//input[contains(@class, 'ng-tns-c165-24') and @ng-reflect-maxlength='5']
 ${1.2_ที่อยู่_ประเทศ_โทรศัพท์}
 ${1.2_ที่อยู่_ประเทศ_โทรสาร}
 
-${1.3_สถานที่ทำงาน_Copyบ้าน}
-${1.3อาชีพ}
+${1.3_สถานที่ทำงาน_Copyบ้าน}   //*[@id="cdk-accordion-child-0"]/div/form/div[12]/div[3]/button
+${1.3อาชีพ}    xpath=//mat-option[contains(@class, 'ng-tns-c241-28') and @ng-reflect-value='5']
 ${1.3_ที่อยู่}
 ${1.3_ประเทศ}
 ${1.3_ที่อยู่_ประเทศ_ไทย}
@@ -65,7 +63,7 @@ ${1.3_ที่อยู่_ประเทศ_รหัสไปรษณีย
 ${1.3_ที่อยู่_ประเทศ_โทรศัพท์}
 ${1.3_ที่อยู่_ประเทศ_โทรสาร}
 
-${1.4_สถานที่สะดวกในการติดต่อ_Copyบ้าน}
+${1.4_สถานที่สะดวกในการติดต่อ_Copyบ้าน}  //*[@id="cdk-accordion-child-0"]/div/form/div[20]/div[3]/button[1]
 ${1.4_สถานที่สะดวกในการติดต่อ_Copyที่ทำงาน}
 ${1.4_ที่อยู่}
 ${1.4_ประเทศ}
@@ -80,17 +78,17 @@ ${1.4_ที่อยู่_ประเทศ_โทรศัพท์}
 ${1.4_ที่อยู่_ประเทศ_โทรสาร}
 
 ${1.5_หลักฐานที่ใช้ในการทำธุรกรรม_บัตรประจำตัวประชาชน}
-${1.5_หลักฐานที่ใช้ในการทำธุรกรรม_บัตรข้าราชการ/พนักงานรัฐวิสาหกิจ}
+${1.5_หลักฐานที่ใช้ในการทำธุรกรรม_บัตรข้าราชการ/พนักงานรัฐวิสาหกิจ}   xpath=//mat-radio-button[@ng-reflect-value='2']
 ${1.5_หลักฐานที่ใช้ในการทำธุรกรรม_หนังสือเดินทาง}
 ${1.5_หลักฐานที่ใช้ในการทำธุรกรรม_ใบสำคัญประจำตัวคนต่างด้าว}
 ${1.5_หลักฐานที่ใช้ในการทำธุรกรรม_อื่นๆ}
 ${1.5_หลักฐานที่ใช้ในการทำธุรกรรม_อื่นๆ_ระบุ}
-${1.5_เลขที่}
+${1.5_เลขที่}   xpath//=input[@maxlength='13' and @min='1000000000000' and @max='9999999999999' and contains(@class, 'mat-input-element')]
 ${1.5_ออกให้โดย}
 ${1.5_เมื่อ}
 ${1.5_วันหมดอายุ}
 
-${ส่วนที่1_บีนทึก}
+${ส่วนที่1_บีนทึก}    xpath=//button[contains(@class, 'mat-raised-button') and contains(@class, 'mat-button-base')]
 ${ส่วนที่1_ถัดไป}
 
 #*****************ส่วนที่ 2 *************************
