@@ -1,67 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.8.7 on win32)" generated="2025-03-20T13:18:07.476730" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.8.7 on win32)" generated="2025-03-21T09:19:36.640338" rpa="false" schemaversion="5">
 <suite id="s1" name="LoginUsermain" source="D:\AML_Project\Testcase\User\LoginUsermain.robot">
 <test id="s1-t1" name="1.open web IBank &amp; Login" line="10">
 <kw name="enteropen web IBank &amp; Login" owner="main_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-20T13:18:07.777397" level="INFO">Opening browser 'chrome' to base url 'https://172.26.59.27:8443/amls/login'.</msg>
+<msg time="2025-03-21T09:19:37.696166" level="INFO">Opening browser 'chrome' to base url 'https://172.26.59.27:8443/amls/login'.</msg>
 <arg>${URL:IBank}</arg>
 <arg>${Browser}</arg>
-<arg>options=add_argument("--ignore-certificate-errors")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-20T13:18:07.777397" elapsed="6.092272"/>
+<status status="PASS" start="2025-03-21T09:19:37.696166" elapsed="7.054620"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-20T13:18:13.870669" elapsed="0.105353"/>
+<status status="PASS" start="2025-03-21T09:19:44.751789" elapsed="0.049824"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>1s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-03-20T13:18:13.977023" elapsed="0.000000"/>
+<status status="PASS" start="2025-03-21T09:19:44.802613" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-21T09:19:52.246092" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-21T09:19:52.246092" level="FAIL">Element 'xpath=//input[contains(@class, 'inputLogin')]' not visible after 5 seconds.</msg>
 <arg>xpath=//input[contains(@class, 'inputLogin')]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-20T13:18:13.978024" elapsed="2.076706"/>
+<status status="FAIL" start="2025-03-21T09:19:44.803611" elapsed="7.506626">Element 'xpath=//input[contains(@class, 'inputLogin')]' not visible after 5 seconds.</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-20T13:18:16.054730" level="INFO">Typing text 'ittikornc' into text field 'xpath=//input[contains(@class, 'inputLogin')]'.</msg>
 <arg>xpath=//input[contains(@class, 'inputLogin')]</arg>
 <arg>${ID:dammi}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T13:18:16.054730" elapsed="3.111141"/>
+<status status="NOT RUN" start="2025-03-21T09:19:52.311263" elapsed="0.000000"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-03-20T13:18:19.167381" level="INFO">Typing password into text field 'xpath=//input[contains(@class, 'inputLogin') and @type='password']'.</msg>
-<msg time="2025-03-20T13:18:21.213969" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>xpath=//input[contains(@class, 'inputLogin') and @type='password']</arg>
 <arg>${password:dammi}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T13:18:19.165871" elapsed="3.099530"/>
+<status status="NOT RUN" start="2025-03-21T09:19:52.311263" elapsed="0.001000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-20T13:18:22.266454" level="INFO">Clicking element '//button[contains(@class, 'mat-raised-button')]'.</msg>
 <arg>//button[contains(@class, 'mat-raised-button')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-20T13:18:22.266454" elapsed="2.074411"/>
+<status status="NOT RUN" start="2025-03-21T09:19:52.312263" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-03-20T13:18:07.777397" elapsed="16.563468"/>
+<status status="FAIL" start="2025-03-21T09:19:37.693060" elapsed="14.620207">Element 'xpath=//input[contains(@class, 'inputLogin')]' not visible after 5 seconds.</status>
 </kw>
-<status status="PASS" start="2025-03-20T13:18:07.777397" elapsed="16.563468"/>
+<status status="FAIL" start="2025-03-21T09:19:37.689045" elapsed="14.625217">Element 'xpath=//input[contains(@class, 'inputLogin')]' not visible after 5 seconds.</status>
 </test>
 <doc>User</doc>
-<status status="PASS" start="2025-03-20T13:18:07.484773" elapsed="16.856092"/>
+<status status="FAIL" start="2025-03-21T09:19:36.665392" elapsed="15.653419"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="LoginUsermain">LoginUsermain</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="LoginUsermain">LoginUsermain</stat>
 </suite>
 </statistics>
 <errors>
