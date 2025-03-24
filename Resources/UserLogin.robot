@@ -1,6 +1,6 @@
 *** Variables ***
 #dammi
-${ID:dammi}  ittikornc
+${ID:dammi}  parichartt
 ${password:dammi}    P@ssw0rd
 #addmin
 ${ID:addmin}

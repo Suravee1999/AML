@@ -9,11 +9,13 @@ Resource    ../../Resources/main_keywords.robot
 *** Test Cases ***
 1.open web IBank & Login
 
-        enteropen web IBank & Login
+        Enteropen web IBank & Login
 
 2.15m check out auto
 
         Sleep    1000s
+
+
 
 
 
