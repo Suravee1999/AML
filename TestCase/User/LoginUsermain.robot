@@ -7,9 +7,14 @@ Resource    ../../Resources/main_keywords.robot
 
 
 *** Test Cases ***
-1.open web IBank & Login
+Test Case Example
+        Open Browser    ${URL:IBank}  ${Browser}  options=add_argument("--ignore-certificate-errors")
+    Maximize Browser Window
+    Set Selenium Speed    0.5s
 
-        Enteropen web IBank & Login
+
+    จบการทำงาน
+
 
 
 

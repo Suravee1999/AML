@@ -95,7 +95,8 @@ ${1.5_ออกให้โดย}
 ${1.5_เมื่อ}
 ${1.5_วันหมดอายุ}
 
-${ส่วนที่1_บีนทึก}    xpath=//button[contains(@class, 'mat-raised-button') and contains(@class, 'mat-button-base')]
+${ส่วนที่1_บีนทึก}    xpath=//button[.//span[contains(text(), 'บันทึก')]]
+${ส่วนที่1_ตกลง}    //button[.//span[contains(text(), 'ตกลง')]]
 ${ส่วนที่1_ถัดไป}      //button[contains(@class, 'mat-raised-button') and .//span[contains(text(), 'ถัดไป')]]
 
 
@@ -186,17 +187,20 @@ ${ส่วนที่2_ถัดไป}        //button[contains(@class, 'mat-
 #*****************ส่วนที่ 3 *************************
 ${3.1_ปวันที่ทำธุรกรรม}       xpath=//input[contains(@class, 'mat-datepicker-input')]
 ${3.1_ประเภทและมูลค่าธุรกรรม}   //mat-select[@name='transactionType']
-${3.1_ประเภทและมูลค่าธุรกรรม_ฝากเงิน}  //mat-option[span[text()=' ฝากเงิน']]
-${3.1_ประเภทและมูลค่าธุรกรรม_ถอนเงิน}  //mat-option[span[text()=' ถอนเงิน']]
+${3.1_ประเภทและมูลค่าธุรกรรม_เลือก}  //mat-option[contains(normalize-space(.//span), '${ธุรกรรม}')]
+#${3.1_ประเภทและมูลค่าธุรกรรม_ถอนเงิน}  //mat-option[[text()=' ถอนเงิน']]
 ${3.1_ประเภทและมูลค่าธุรกรรม_จากบัญชีเลขที่}  xpath=//input[@ng-reflect-name='accountNo']
 ${3.1_ประเภทและมูลค่าธุรกรรม_จากบัญชีเลขที่_จำนวน}   xpath=//input[@ng-reflect-name='transactionAmount']
-${วัตถุประสงค์ของการทำธุรกรรม}  xpath=//mat-select[contains(@class, 'mat-select') and contains(@class, 'ng-valid')]
-${วัตถุประสงค์ของการทำธุรกรรม_ฝากเงินเพื่อรับดอกเบี้ย}  //mat-option//span[text()='ฝากเงินเพื่อรับดอกเบี้ย']
-${วัตถุประสงค์ของการทำธุรกรรม_ถอนไปใช้ในธุรกิจ}   //mat-option//span[text()='ถอนไปใช้ในธุรกิจ']
-${วัตถุประสงค์ของการทำธุรกรรม_ไม่ระบุวัตถุประสงค์}   //mat-option//span[text()='ไม่ระบุวัตถุประสงค์']
-${วัตถุประสงค์ของการทำธุรกรรม_อื่นๆ}    //mat-option//span[text()='อื่นๆ']
-${วัตถุประสงค์ของการทำธุรกรรม_อื่นๆ_โปรดระบุ}   xpath=//inpur[contains{@class, 'mat-input-element') and contains(@class, 'cdk-text-field-autofill-monitored')]
+${3.1วัตถุประสงค์ของการทำธุรกรรม}  xpath=//mat-select[@name='objectiveType']
+#${วัตถุประสงค์ของการทำธุรกรรม_ฝากเงินเพื่อรับดอกเบี้ย}  //mat-option//span[text()='ฝากเงินเพื่อรับดอกเบี้ย']
+#${วัตถุประสงค์ของการทำธุรกรรม_ถอนไปใช้ในธุรกิจ}   //mat-option//span[text()='ถอนไปใช้ในธุรกิจ']
+#${วัตถุประสงค์ของการทำธุรกรรม_ไม่ระบุวัตถุประสงค์}   //mat-option//span[text()='ไม่ระบุวัตถุประสงค์']
+${3.3วัตถุประสงค์ของการทำธุรกรรม_เลือก}    //mat-option[.//span[contains(text(), '${เลือกวัตถุประสงค์ของการทำธุรกรรม}')]]
+${3.3วัตถุประสงค์ของการทำธุรกรรม_อื่นๆ_โปรดระบุ}   xpath=//inpur[contains{@class, 'mat-input-element') and contains(@class, 'cdk-text-field-autofill-monitored')]
 ${เอกสารการประกอบวิเคาะห์}   //*[@id='file']
-${ส่วนที่3_บันทึก}    //button[span[text()='บันทึก']]
-${ขออนุมัติ}    //button[mat-icon[text()='assignment_ind'] and span[text()='ขออนุมัติ']]
-${ส่วนที่3_ยืนยัน}   //button[span[span[text()='ยืนยัน']] and i[contains(@class, 'fas fa-check')]]
+${ส่วนที่3_บันทึก}    //button[.//span[contains(text(), 'บันทึก')]]
+${ขออนุมัติ}    //button//span[contains(text(), 'ขออนุมัติ')]
+${ส่วนที่3_ยืนยัน}   //button//span[contains(text(), 'ยืนยัน')]
+
+
+

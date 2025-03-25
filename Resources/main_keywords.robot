@@ -18,3 +18,10 @@ Enteropen web IBank & Login
 ยืนยันการเข้าระบบ
     
     Click Element    //button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]
+
+
+จบการทำงาน
+    Sleep    5s    # หยุดทำงานเป็นเวลา 5 วินาที
+    Capture Page Screenshot
+    Log    Test Teardown Completed
+    Close Browser  # ปิดบราวเซอร์หลังจากถ่ายภาพเสร็จ
