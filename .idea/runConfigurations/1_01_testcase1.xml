@@ -13,8 +13,8 @@
     <option name="IS_MODULE_SDK" value="false" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestCase/AMLO/ปปง1-01/ปปง1-01_testcase1.robot" />
-    <option name="PARAMETERS" value="robot -d .\Results\AMLO_Results\ปปง1-01_Results\Testcase1\ .\Testcase\AMLO\ปปง1-01\testcase1.robot" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.venv/Scripts/robot.exe" />
+    <option name="PARAMETERS" value="-d .\Results\AMLO_Results\ปปง1-01_Results\ปปง1-01_Results_TC1 .\TestCase\AMLO\ปปง1-01\ปปง1-01_testcase1.robot" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
     <option name="MODULE_MODE" value="false" />

@@ -6,13 +6,16 @@ Resource    ../../../Resources/main_keywords.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/ปปง1-01/keywords_Testcase_1-01.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/AMLO Variables.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/ปปง1-01/ปปง1-01_va.robot
+Resource    ../../../Resources/Menu_name//AML/ViewAlert รายงาน ปปง/keywordการค้นหา.robot
+Resource    ../../../Resources/Menu_name//AML/ViewAlert รายงาน ปปง/varการค้นหา.robot
+Resource    ../../../Resources/Menu_name/AML/ViewAlert รายงาน ปปง/keywordการค้นหา.robot
 
 *** Variables ***
 ${เหตุผลในการรายงาน}        test
 ${คำนำหน้า}  นาย
 ${ชื่อ}   เทส
 ${นามสกุล}   สุดหล่อ
-${เลขที่บัตร}   1234567890123
+#${เลขที่บัตร}   1234567890123
 ${ที่อยู่}  เทส
 ${companyProvince}    กรุงเทพมหานคร
 ${companyDistrict}    เขตจตุจักร
@@ -46,7 +49,8 @@ ${ระบุเหตุผลเลือกวัตถุประสงค
         ยื่นคำร้องรายงานล่าช้า & ไม่ใช่ลูกค้าธนาคาร
 
 5.ส่วนที่1
-
+        สุ่มเลขบัตร13หลัก
+        ใช้งานเลขบัตร
         ส่วนที่1 ระบุข้อมูล(ทำธุรกรรมด้วยตนเอง)
         ส่วนที่1 บันทึกและไปหน้าถัดไป
 6.ส่วนที่2
@@ -56,7 +60,6 @@ ${ระบุเหตุผลเลือกวัตถุประสงค
         ส่วนที่ 3 ระบุข้อมูล(เลือกฝากเงิน/ถอนเงิน)
         ส่วนที่ 3 บันทึกข้อมูล
         ส่วนที่ 3 ขออนุมัติ
-
 
 จบการทำงาน
         จบการทำงาน

@@ -145,6 +145,7 @@ Select the Submit Request menu
 
 
 ส่วนที่ 3 บันทึกข้อมูล
+           เก็บรหัสCIF
            Click Element    ${ส่วนที่1_บีนทึก}
            Sleep    1s
            Click Element    ${ส่วนที่1_ตกลง}

@@ -20,8 +20,9 @@ Enteropen web IBank & Login
     Click Element    //button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]
 
 
+
 จบการทำงาน
-    Sleep    15s    # หยุดทำงานเป็นเวลา 5 วินาที
+    Sleep    5s    # หยุดทำงานเป็นเวลา 5 วินาที
     Capture Page Screenshot
     Log    Test Teardown Completed
     Close Browser  # ปิดบราวเซอร์หลังจากถ่ายภาพเสร็จ
