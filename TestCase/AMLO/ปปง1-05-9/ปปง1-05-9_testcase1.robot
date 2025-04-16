@@ -6,6 +6,9 @@ Resource    ../../../Resources/main_keywords.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/ปปง1-05-9/keywords_Testcase_1-05-9.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/AMLO Variables.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/ปปง1-05-9/ปปง1-05-9_va.robot
+Resource    ../../../Resources/Menu_name//AML/ViewAlert รายงาน ปปง/keywordการค้นหา.robot
+Resource    ../../../Resources/Menu_name//AML/ViewAlert รายงาน ปปง/varการค้นหา.robot
+Resource    ../../../Resources/Menu_name/AML/ViewAlert รายงาน ปปง/keywordการค้นหา.robot
 
 *** Variables ***
 ${เหตุผลในการรายงาน}        test

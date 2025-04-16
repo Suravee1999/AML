@@ -7,11 +7,14 @@ Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manu
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/AMLO Variables.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/ปปง1-03/ปปง1-03_va.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/ปปง1-03/keywords_Testcase_1-03.robot
+Resource    ../../../Resources/Menu_name//AML/ViewAlert รายงาน ปปง/keywordการค้นหา.robot
+Resource    ../../../Resources/Menu_name//AML/ViewAlert รายงาน ปปง/varการค้นหา.robot
+Resource    ../../../Resources/Menu_name/AML/ViewAlert รายงาน ปปง/keywordการค้นหา.robot
 
 *** Variables ***
 ${เหตุผลในการรายงาน}        test
 ${คำนำหน้า}  นาย
-${ชื่อ}   เทส
+${ชื่อ}   ลองเทส
 ${นามสกุล}   สุดหล่อ
 #${เลขที่บัตร}   1234567890123
 ${ที่อยู่}  เทส
@@ -21,25 +24,16 @@ ${companySubdistrict}    จตุจักร
 ${รหัสไปรษณีย์}     21229
 ${เลือกอาชีพ}     อาชีพอิสระ
 ${เลขที่บัตร2}     0987654321123
-#************************ส่วน2*************************
-${คำนำหน้า_ส่วน2}  นาย
-${ชื่อ_ส่วน2}   เทส
-${นามสกุล_ส่วน2}   สุดหล่อ
-${เลขที่บัตร_ส่วน2}   1234567890124
-${ที่อยู่_ส่วน2}  เทส
-${companyProvince_ส่วน2}    กรุงเทพมหานคร
-${companyDistrict_ส่วน2}    เขตจตุจักร
-${companySubdistrict_ส่วน2}    จตุจักร
-${รหัสไปรษณีย์_ส่วน2}     21229
-${เลือกอาชีพ_ส่วน2}     อาชีพอิสระ
-${เลขที่บัตร2_ส่วน2}     0987654321124
-#************************ส่วน3*************************
 ${เหตุผลประกอบการพิจารณา}     test
+
+${เหตุผลการส่งกลับ}      test
 *** Test Cases ***
 1.open web IBank & Login
         [Documentation]   ทดสอบการยื่นคำร้อง manual ของ ปปง.1-03 กรณี ยื่นคำร้องเอง
         Enteropen web IBank & Login
         Run Keyword And Ignore Error    ยืนยันการเข้าระบบ
+        Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
+
 2.เลือก AML & ยื่นคำร้อง
         Select the Submit Request menu
 
@@ -59,7 +53,22 @@ ${เหตุผลประกอบการพิจารณา}     test
 6.ส่วนที่2
         ส่วนที่2 ถัดไป
 7.รายงาน
-        ส่วนที่ 3 ไม่พบความผิดปกติ
+        เก็บรหัสCIF
+        ส่วนที่ 3 พบความผิดปกติ
+        ส่วนที่ 3 บันทึกข้อมูล
         ส่วนที่ 3 ข้ออนุมัติ
+
+8.เปลี่ยนUserอนุมัติข้อมูล
+        กดปุ่มตกลง
+        ออกจากระบบ
+        เข้าUserหัวหน้าอนุมัติข้อมูล
+        Run Keyword And Ignore Error    ยืนยันการเข้าระบบ
+        Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
+
+9.เลือกรายการ
+        เลือกเมนูView Alert รายงาน ปปง. 1-01, 1-02, 1-03, 1-05-9
+        ค้นหารายงานด้วย CIF
+10.อนุมัติรายการ
+        เลือกส่งกลับคืนเพื่อแก้ไข
 จบการทำงาน
         จบการทำงาน

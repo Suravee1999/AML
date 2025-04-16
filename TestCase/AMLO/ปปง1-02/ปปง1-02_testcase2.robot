@@ -6,6 +6,9 @@ Resource    ../../../Resources/main_keywords.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/ปปง1-02/keywords_Testcase_1-02.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/AMLO Variables.robot
 Resource    ../../../Resources/Menu_name/AML/ยื่นคำร้อง Manual/ปปง1-02/ปปง1-02_va.robot
+Resource    ../../../Resources/Menu_name//AML/ViewAlert รายงาน ปปง/keywordการค้นหา.robot
+Resource    ../../../Resources/Menu_name//AML/ViewAlert รายงาน ปปง/varการค้นหา.robot
+Resource    ../../../Resources/Menu_name/AML/ViewAlert รายงาน ปปง/keywordการค้นหา.robot
 
 Documentation       ทดสอบการยื่นคำร้อง manual ของ ปปง.1-02 กรณี ยื่นคำร้องเอง
 *** Variables ***
@@ -49,6 +52,7 @@ ${ระบุเหตุผลเลือกวัตถุประสงค
         [Documentation]   ทดสอบการยื่นคำร้อง manual ของ ปปง.1-02 กรณี ยื่นคำร้องเอง
         Enteropen web IBank & Login
         Run Keyword And Ignore Error        ยืนยันการเข้าระบบ
+        Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
 2.เลือก AML & ยื่นคำร้อง
 
 
@@ -77,7 +81,7 @@ ${ระบุเหตุผลเลือกวัตถุประสงค
         ส่วนที่ 3 ข้ออนุมัติ
 8.ค้นหารายงาน
         กดปุ่มตกลง
-        ค้าหารายงานด้วย CIF
+        ค้นหารายงานด้วย CIF
 
 
 จบการทำงาน
