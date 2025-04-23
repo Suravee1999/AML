@@ -1,0 +1,141 @@
+*** Settings ***
+Library     SeleniumLibrary
+Resource    Manual Key In Variables.robot
+Resource    ../KYC Variables.robot
+
+*** Keywords ***
+เข้าหน้าจอKYC เลือกระบบ Manual Key in
+        Click Element    ${KYC-ไทย}
+        Click Element    ${ยืนยันตัวตน}
+        Click Element    ${ไทย Manual Key In}
+
+ระบุข้อมูล Manual Key in TH
+        Input Text    ${เลขประจำตัวประชาชน_xpath}    ${เลขประจำตัวประชาชน}
+        Click Element    ${คำนำหน้าชื่อTH_xpath}
+        Click Element    ${คำนำหน้าชื่อTH_เลือก}
+        Input Text    ${ชื่อTH_xpath}    ${ชื่อTH}
+        Input Text    ${นามสกุลTH_xpath}    ${นามสกุลTH}
+
+ระบุข้อมูล Manual Key in EN
+        Click Element    ${คำนำหน้าชื่อEN_xpath}
+        Click Element    ${คำนำหน้าชื่อEN_เลือก}
+        Input Text    ${ชื่อEN_xpath}    ${ชื่อEN}
+        Input Text    ${นามสกุลEN_xpath}    ${นามสกุลEN}
+
+ระบุข้อมูลวันเกิดและที่อยู่
+        Input Text    ${วัน/เดือน/ปี เกิด_xpath}    ${วัน/เดือน/ปี เกิด}
+        Input Text    ${วันที่ออกบัตร_xpath}     ${วันที่ออกบัตร}
+        Input Text    ${วันที่บัตรหมดอายุ_xpath}    ${วันที่บัตรหมดอายุ}
+        Input Text    ${เลขที่_xpath}    ${เลขที่}
+        Input Text    ${หมู่ที่_xpath}    ${หมู่ที่}
+        Input Text    ${ตรอก_xpath}    ${ตรอก}
+        Input Text    ${ซอย_xpath}    ${ซอย}
+        Input Text    ${ถนน_xpath}    ${ถนน}
+        Click Element    ${จังหวัด_xpath}
+        Click Element    ${จังหวัด_เลือก}
+        Click Element    ${อำเภอ_xpath}
+        Click Element    ${อำเภอ_เลือก}
+        Click Element    ${ตำบล_xpath}
+        Click Element    ${ตำบล_เลือก}
+        Input Text    ${รหัสไปรษณีย์_xpath}    ${รหัสไปรษณีย์}
+
+อัพโหลดไฟล์
+        Sleep    3s
+        Choose File    ${อัพโหลด_xpath}    D:\AML_Project\File\รูปบัตรประชาชน.png
+
+กดปุ่มบันทึก
+        Click Element    ${ปุ่มบันทึก}
+
+ข้อมูล Consent ยินยอม
+        Click Element    ${ยินยอม1}
+        Click Element    ${ยินยอม2}
+        Click Element    ${ยินยอม3}
+        Click Element    ${ยินยอม4}
+
+ข้อมูล Consent ไม่ยินยอม
+        Click Element    ${ไม่ยินยอม1}
+        Click Element    ${ไม่ยินยอม2}
+        Click Element    ${ไม่ยินยอม3}
+        Click Element    ${ไม่ยินยอม4}
+
+ข้อมูล Consent เพิกถอนความยินยอม
+        Click Element    ${เพิกถอนความยินยอม1}
+        Click Element    ${เพิกถอนความยินยอม2}
+        Click Element    ${เพิกถอนความยินยอม3}
+        Click Element    ${เพิกถอนความยินยอม4}
+
+ข้อมูลประเภท บุคคลธรรมดา&ลูกค้าธนาคาร
+        Click Element At Coordinates    body    10    10
+
+ข้อมูลประเภท บุคคลธรรมดา&ลูกค้าจร
+        Click Element    ${ประเภทลูกค้า_เลิอก}
+        Click Element    ${ประเภทลูกค้า_ลูกค้าจร}
+
+ข้อมูลประเภท นิติบุคคล&ลูกค้าธนาคาร
+        Click Element    ${ประเภท_เลือก}
+        Click Element    ${ประเภท_นิติบุคคล}
+
+ข้อมูลประเภท บุคคลธรรมดา&ลูกค้าจร
+        Click Element    ${ประเภทลูกค้า_เลิอก}
+        Click Element    ${ประเภทลูกค้า_ลูกค้าจร}
+ข้อมูลประเภทเปิดบัญชีใหม่
+        Click Element    ${วัตถุประสงค์การดำเนินการ}
+        Click Element    ${วัตถุประสงค์การดำเนินการ_เปิดบัญชีใหม่}
+ข้อมูลประเภทเปลี่ยนแปลงข้อมูล
+        Click Element    ${วัตถุประสงค์การดำเนินการ}
+        Click Element    ${วัตถุประสงค์การดำเนินการ_เปลี่ยนแปลงข้อมูล}
+ข้อมูลการตรวจสอบความเสี่ยงและ Watchlist
+        Click Element    ${ความเสี่ยงและ Watchlist}
+ข้อมูลการตรวจสอบเฉพาะ Watchlist
+        Click Element    ${เฉพาะ Watchlist}
+
+#*******ส่วนของเพื่มเติม**************************
+#********************************************
+กดส่วนเพิ่มเติม
+        Click Element    ${ปุ่มเพื่มเติม}
+
+ระบุข้อมูลส่วนของเพิ่มเติม
+        Input Text    ${ชื่อลูกค้า_เพื่มเติม_xpath}    text
+        Input Text    ${นามสกุลลูกค้า_เพื่มเติม_xpath}    text
+        Input Text    ${เลขบัตรประจำตัวประชาชน/หนังสือเดินทาง_เพื่มเติม_xpath}    text
+        Input Text    ${เลขที่บัญชี_เพื่มเติม_xpath}    text
+        Click Element    ${วัตถุประสงค์การดำเนินการ_เพื่มเติม_xpath}
+        Click Element    ${วัตถุประสงค์การดำเนินการ_เปิดบัญชีใหม่_xpath}
+        Click Element    ${วัตถุประสงค์การดำเนินการ_เปลี่ยนแปลงข้อมูล_xpath}
+        Click Element At Coordinates    body    10    10
+        Click Element    ${ประเภทลูกค้า_เพื่มเติม_xpath}
+        Click Element    ${ประเภทลูกค้า_เลือก_xpath}
+        Click Element    ${อาชีพ_เพื่มเติม_xpath}
+        Click Element    ${อาชีพ_เลือก_xpath}
+        Click Element    ${สัญชาติ_เพื่มเติม_xpath}
+        Click Element    ${สัญชาติ_เลือก_xpath}
+        Click Element    ${ประเทศที่อยู่_เพื่มเติม_xpath}
+        Click Element    ${ประเทศที่อยู่_เลือก_xpath}
+        
+        Input Text    ${สาขาเจ้าของบัญชี_เพื่มเติม}    ${สาขาเจ้าของบัญชี}
+        Click Element    ${ประเภทผลิตภัณฑ์_เพื่มเติม}
+        Click Element    ${ปัจจัยเกี่ยวกับช่องทางและบริการ_เพื่มเติม}
+      
+#********************************************
+#********************************************
+
+ยืนยันสถานะ KYC อนุมัติ KYC (Approve)
+        Click Element    ${อนุมัติ KYC (Approve)} 
+        Input Text    ${ยืนยันสถานะ KYC_ระบุเหตุผล}    ${KYC_ระบุเหตุผล}
+
+ยืนยันสถานะ KYC ปฏิเสธ KYC (Reject)
+        Click Element    ${ปฏิเสธ KYC (Reject)}
+        Input Text    ${ยืนยันสถานะ KYC_ระบุเหตุผล}    ${KYC_ระบุเหตุผล}
+
+การอนุมัติโดยผู้จัดการสาขาอนุมัติ KYC (Approve)
+        Click Element    ${ผู้จัดการสาขาปฏิบัติงาน ณ สาขา}
+        Click Element    ${อนุมัติ KYC (Approve)} 
+        Input Text    ${การอนุมัติโดยผู้จัดการสาขา_ระบุเหตุผล}    ${ู้จัดการสาขา_ระบุเหตุผล}
+        
+การอนุมัติโดยผู้จัดการสาขาปฏิเสธ KYC (Reject)
+        Click Element    ${ผู้จัดการสาขาปฏิบัติงาน ณ สาขา}
+        Click Element    ${ปฏิเสธ KYC (Reject)}
+        Input Text    ${การอนุมัติโดยผู้จัดการสาขา_ระบุเหตุผล}    ${ู้จัดการสาขา_ระบุเหตุผล}
+
+กดปุ่มบันทึกและส่งเมล
+        Click Element    ${ปุ่มบันทึกและส่งเมล}

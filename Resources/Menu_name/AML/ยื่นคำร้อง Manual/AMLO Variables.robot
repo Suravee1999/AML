@@ -3,7 +3,7 @@ Library     SeleniumLibrary
 Library    String
 
 *** Variables ***
-${AML-ไทย}     xpath=//a[contains(@class, 'sidebar-link') and .//div[contains(text(), 'AML-ไทย')]]
+${AML-ไทย}     xpath=//a[contains(@class, 'sidebar-link') and .//div[contains(text(), 'AML')]]
 ${ยื่นคำร้องManual}   xpath=//a[contains(@class, 'mat-list-item') and contains(., 'ยื่นคำร้อง Manual')]
 
 ${View Alert รายงาน ปปง. 1-01, 1-02, 1-03, 1-05-9}      xpath=//a[contains(@class, 'mat-list-item') and contains(., '    View Alert รายงาน ปปง. 1-01, 1-02,1-03, 1-05-9 ')]
