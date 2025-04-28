@@ -4,10 +4,13 @@ Resource    ปปง1-02_va.robot
 Resource    ../AMLO Variables.robot
 
 *** Variables ***
-${text:test}      test
 
+${UPLOAD_FILE_PATH}         D:\\AML_Project\\File\\รูปบัตรประชาชน.png
 
 *** Keywords ***
+อัพโหลดไฟล์
+        Sleep    1s
+        Choose File    ${อัพโหลด_xpath}     ${UPLOAD_FILE_PATH}
 
 Select the Submit Request menu
 
@@ -21,7 +24,7 @@ Select the Submit Request menu
 ยื่นคำร้องอื่นๆ & ไม่ใช่ลูกค้าธนาคาร
         Click Element    ${รายงานเนื่องจาก_รายงานตัวช้า}
         Click Element    ${รายงานเนื่องจาก_อื่นๆ}
-        Input Text    ${รายงานเนื่องจาก_อื่นๆ_ระบุ}    ${text:test}
+        Input Text    ${รายงานเนื่องจาก_อื่นๆ_ระบุ}    ${รายงานเนื่องจาก_อื่นๆ}
         Click Element    ${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว_ไม่ใช้ลูกค้าธนาคาร}
         Click Element    ${ยื่นคำร้องManual_ถัดไป}
         
@@ -168,4 +171,5 @@ Select the Submit Request menu
 
 ส่วนที่ 3 ข้ออนุมัติ
            Click Element    ${ขออนุมัติ}
-           Click Element    ${ส่วนที่3_ยืนยัน}  
+           Click Element    ${ส่วนที่3_ยืนยัน}
+

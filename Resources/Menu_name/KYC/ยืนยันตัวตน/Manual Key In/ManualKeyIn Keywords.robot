@@ -4,6 +4,10 @@ Resource    Manual Key In Variables.robot
 Resource    ../KYC Variables.robot
 
 *** Keywords ***
+อัพโหลดไฟล์
+        Sleep    1s
+        Choose File    ${อัพโหลด_xpath}    D:\\AML_Project\\File\\รูปบัตรประชาชน.png
+
 เข้าหน้าจอKYC เลือกระบบ Manual Key in
         Click Element    ${KYC-ไทย}
         Click Element    ${ยืนยันตัวตน}
@@ -22,10 +26,11 @@ Resource    ../KYC Variables.robot
         Input Text    ${ชื่อEN_xpath}    ${ชื่อEN}
         Input Text    ${นามสกุลEN_xpath}    ${นามสกุลEN}
 
-ระบุข้อมูลวันเกิดและที่อยู่
+ระบุข้อมูลวันเกิด
         Input Text    ${วัน/เดือน/ปี เกิด_xpath}    ${วัน/เดือน/ปี เกิด}
         Input Text    ${วันที่ออกบัตร_xpath}     ${วันที่ออกบัตร}
         Input Text    ${วันที่บัตรหมดอายุ_xpath}    ${วันที่บัตรหมดอายุ}
+ระบุข้อมูลที่อยู่
         Input Text    ${เลขที่_xpath}    ${เลขที่}
         Input Text    ${หมู่ที่_xpath}    ${หมู่ที่}
         Input Text    ${ตรอก_xpath}    ${ตรอก}
@@ -39,9 +44,7 @@ Resource    ../KYC Variables.robot
         Click Element    ${ตำบล_เลือก}
         Input Text    ${รหัสไปรษณีย์_xpath}    ${รหัสไปรษณีย์}
 
-อัพโหลดไฟล์
-        Sleep    3s
-        Choose File    ${อัพโหลด_xpath}    D:\AML_Project\File\รูปบัตรประชาชน.png
+
 
 กดปุ่มบันทึก
         Click Element    ${ปุ่มบันทึก}
@@ -65,19 +68,23 @@ Resource    ../KYC Variables.robot
         Click Element    ${เพิกถอนความยินยอม4}
 
 ข้อมูลประเภท บุคคลธรรมดา&ลูกค้าธนาคาร
-        Click Element At Coordinates    body    10    10
+        Click Element       ${ประเภท_เลือก}
+        Click Element       ${ประเภท_บุคคลธรรมดา}
 
 ข้อมูลประเภท บุคคลธรรมดา&ลูกค้าจร
         Click Element    ${ประเภทลูกค้า_เลิอก}
         Click Element    ${ประเภทลูกค้า_ลูกค้าจร}
-
+        Input Text    ${จำนวนเงิน_xpath}     ${จำนวนเงิน}
 ข้อมูลประเภท นิติบุคคล&ลูกค้าธนาคาร
         Click Element    ${ประเภท_เลือก}
         Click Element    ${ประเภท_นิติบุคคล}
 
-ข้อมูลประเภท บุคคลธรรมดา&ลูกค้าจร
+ข้อมูลประเภท นิติบุคคล&ลูกค้าจร
+        Click Element    ${ประเภท_เลือก}
+        Click Element    ${ประเภท_นิติบุคคล}
         Click Element    ${ประเภทลูกค้า_เลิอก}
         Click Element    ${ประเภทลูกค้า_ลูกค้าจร}
+        Input Text    ${จำนวนเงิน_xpath}     ${จำนวนเงิน}
 ข้อมูลประเภทเปิดบัญชีใหม่
         Click Element    ${วัตถุประสงค์การดำเนินการ}
         Click Element    ${วัตถุประสงค์การดำเนินการ_เปิดบัญชีใหม่}
@@ -88,7 +95,12 @@ Resource    ../KYC Variables.robot
         Click Element    ${ความเสี่ยงและ Watchlist}
 ข้อมูลการตรวจสอบเฉพาะ Watchlist
         Click Element    ${เฉพาะ Watchlist}
+วันที่ครบกำหนดทบทวนความเสี่ยง
+        Input Text    ${วันที่ครบกำหนดทบทวนความเสี่ยง_xpath}    ${วันที่ครบกำหนดทบทวนความเสี่ยง}
 
+ประเภทธุรกรรม(ระบุในVariables)
+        Click Element    ${ประเภทธุรกรรม_xpath}
+        Click Element    ${ประเภทธุรกรรม_เลือก}
 #*******ส่วนของเพื่มเติม**************************
 #********************************************
 กดส่วนเพิ่มเติม
