@@ -3,6 +3,9 @@ Library    SeleniumLibrary
 Resource    SettingURL.robot
 Resource    UserLogin.robot
 
+
+
+
 *** Variables ***
 ${ปุ่มออกจากระบบ}   //button//span[contains(text(), 'ออกจากระบบ')]
 
@@ -40,6 +43,7 @@ Enteropen web IBank & Login
 
 ออกจากระบบ
              Click Element    ${ปุ่มออกจากระบบ}
+
 จบการทำงาน
     Sleep    5s    # หยุดทำงานเป็นเวลา 5 วินาที
     Capture Page Screenshot

@@ -3,10 +3,15 @@ Library     SeleniumLibrary
 Resource    Manual Key In Variables.robot
 Resource    ../KYC Variables.robot
 
+*** Variables ***
+
+${UPLOAD_FILE_PATH}         D:\\AML_Project\\File\\รูปบัตรประชาชน.png
+
 *** Keywords ***
 อัพโหลดไฟล์
         Sleep    1s
-        Choose File    ${อัพโหลด_xpath}    D:\\AML_Project\\File\\รูปบัตรประชาชน.png
+        Choose File    ${อัพโหลด_xpath}     ${UPLOAD_FILE_PATH}
+
 
 เข้าหน้าจอKYC เลือกระบบ Manual Key in
         Click Element    ${KYC-ไทย}
@@ -107,14 +112,15 @@ Resource    ../KYC Variables.robot
         Click Element    ${ปุ่มเพื่มเติม}
 
 ระบุข้อมูลส่วนของเพิ่มเติม
-        Input Text    ${ชื่อลูกค้า_เพื่มเติม_xpath}    text
-        Input Text    ${นามสกุลลูกค้า_เพื่มเติม_xpath}    text
-        Input Text    ${เลขบัตรประจำตัวประชาชน/หนังสือเดินทาง_เพื่มเติม_xpath}    text
-        Input Text    ${เลขที่บัญชี_เพื่มเติม_xpath}    text
+        Input Text    ${CIF_เพื่มเติม_xpath}    ${CIF_เพื่มเติม}
+        Input Text    ${ชื่อลูกค้า_เพื่มเติม_xpath}    ${ชื่อลูกค้า_เพื่มเติม}
+        Input Text    ${นามสกุลลูกค้า_เพื่มเติม_xpath}    ${นามสกุลลูกค้า_เพื่มเติม}
+        Input Text    ${เลขบัตรประจำตัวประชาชน/หนังสือเดินทาง_เพื่มเติม_xpath}    ${เลขบัตรประจำตัวประชาชน/หนังสือเดินทาง_เพื่มเติม}
+        Input Text    ${เลขที่บัญชี_เพื่มเติม_xpath}    ${เลขที่บัญชี_เพื่มเติม}
         Click Element    ${วัตถุประสงค์การดำเนินการ_เพื่มเติม_xpath}
-        Click Element    ${วัตถุประสงค์การดำเนินการ_เปิดบัญชีใหม่_xpath}
+        #Click Element    ${วัตถุประสงค์การดำเนินการ_เปิดบัญชีใหม่_xpath}
         Click Element    ${วัตถุประสงค์การดำเนินการ_เปลี่ยนแปลงข้อมูล_xpath}
-        Click Element At Coordinates    body    10    10
+        Press Keys      xpath=//body   ESCAPE
         Click Element    ${ประเภทลูกค้า_เพื่มเติม_xpath}
         Click Element    ${ประเภทลูกค้า_เลือก_xpath}
         Click Element    ${อาชีพ_เพื่มเติม_xpath}
@@ -123,11 +129,14 @@ Resource    ../KYC Variables.robot
         Click Element    ${สัญชาติ_เลือก_xpath}
         Click Element    ${ประเทศที่อยู่_เพื่มเติม_xpath}
         Click Element    ${ประเทศที่อยู่_เลือก_xpath}
+        Click Element    ${เป็นลูกค้าที่ไม่มีถิ่นที่อยู่ในประเทศไทย_เพื่มเติม_xpath} 
+        Click Element    ${เป็นลูกค้าที่ไม่มีถิ่นที่อยู่ในประเทศไทย_เลือก_xpath}
         
         Input Text    ${สาขาเจ้าของบัญชี_เพื่มเติม}    ${สาขาเจ้าของบัญชี}
         Click Element    ${ประเภทผลิตภัณฑ์_เพื่มเติม}
         Click Element    ${ปัจจัยเกี่ยวกับช่องทางและบริการ_เพื่มเติม}
-      
+
+
 #********************************************
 #********************************************
 
