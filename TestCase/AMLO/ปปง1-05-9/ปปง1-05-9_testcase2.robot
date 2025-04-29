@@ -62,7 +62,7 @@ ${เลือกวัตถุประสงค์ของการทำธ
         Enteropen web IBank & Login
         Run Keyword And Ignore Error    ยืนยันการเข้าระบบ
 2.เลือก AML & ยื่นคำร้อง
-        Select the Submit Request menu
+        เมนู AML ยื่นคำร้องManual
 
 3.เลือกรายการ_ปปง1-05-9
         เลือกรายการ_ปปง1-05-9

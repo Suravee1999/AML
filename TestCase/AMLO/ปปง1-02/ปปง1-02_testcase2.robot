@@ -56,8 +56,7 @@ ${ระบุเหตุผลเลือกวัตถุประสงค
         Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
 2.เลือก AML & ยื่นคำร้อง
 
-
-        Select the Submit Request menu
+       เมนู AML ยื่นคำร้องManual
 
 3.เลือกรายการ_ปปง1-02
 

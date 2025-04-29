@@ -12,11 +12,7 @@ ${UPLOAD_FILE_PATH}         D:\\AML_Project\\File\\รูปบัตรปร�
         Sleep    1s
         Choose File    ${อัพโหลด_xpath}     ${UPLOAD_FILE_PATH}
 
-Select the Submit Request menu
 
-        Click Element    ${AML-ไทย}
-        Click Element    ${ยื่นคำร้องManual}
-        
 เลือกรายการ_ปปง1-03
         Click Element    ${ประเภทรายงาน}
         Click Element    ${ปปง.1-03}

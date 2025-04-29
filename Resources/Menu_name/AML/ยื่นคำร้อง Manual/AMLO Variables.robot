@@ -13,6 +13,9 @@ ${MIN}    1000000000000
 ${MAX}    9999999999999
 
 *** Keywords ***
+เมนู AML ยื่นคำร้องManual
+        Click Element    ${AML-ไทย}
+        Click Element    ${ยื่นคำร้องManual}
 
 เลือกเมนูView Alert รายงาน ปปง. 1-01, 1-02, 1-03, 1-05-9
 
