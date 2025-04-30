@@ -6,7 +6,7 @@ Resource    ../../../Resources/main_keywords.robot
 Resource    ../../../Resources/Menu_name/Watch List/WatchList Variables.robot
 Resource    ../../../Resources/Menu_name/Watch List/Watch List/WatchList Va.robot
 Resource    ../../../Resources/Menu_name/Watch List/Watch List/WatchList Keywords.robot
-Documentation       ทดสอบการทำงาน Watch List SC_WL_001
+Documentation       ทดสอบการทำงาน Watch List SC_WL_024
 
 *** Variables ***
 ${Source}     AMLO          #AMLO,CFRI,Down Jones,GSB
@@ -31,9 +31,3 @@ ${วันเกิด}      11/02/2540
 
 3ระบุข้อมูล
         ค้นหาข้อมูลSource
-        ค้นหาข้อมูลกรุณาเลือกประเภทในการค้นหา-บุคคลธรรมดา
-        ความแม่นยำในการค้นหา 100%
-        ตรวจสอบด้วย เลขประจำตัวประชาชน/เลขที่หนังสือเดินทาง
-        ข้อมูลเพิ่มเติมในการค้นหาประเทศ
-        ข้อมูลเพิ่มเติมในการค้นหาวันเกิด
-        กดปุ่มตรวจสอบ
