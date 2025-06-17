@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.8.7 on win32)" generated="2025-05-06T15:43:26.043494" rpa="false" schemaversion="5">
+<suite id="s1" name="TC KYC 001" source="D:\AML_Project\TestCase\KYC\Manual Key In\TC_KYC_001.robot">
+<test id="s1-t1" name="1.open web IBank &amp; Login" line="56">
+<kw name="Enteropen web IBank &amp; Login" owner="main_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-06T15:43:26.661945" level="INFO">Opening browser 'chrome' to base url 'https://172.26.59.117/login'.</msg>
+<msg time="2025-05-06T15:43:28.705084" level="WARN">The chromedriver version (134.0.6998.88) detected in PATH at C:\Users\suravesi\AppData\Local\Programs\Python\Python38\chromedriver.exe might not be compatible with the detected chrome version (136.0.7103.49); currently, chromedriver 136.0.7103.49 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-06T15:43:33.955721" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-06T15:43:33.955721" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 136.0.7103.49 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF78CE5FE45+26629]
+	(No symbol) [0x00007FF78CDC6010]
+	(No symbol) [0x00007FF78CC5931A]
+	(No symbol) [0x00007FF78CC9D40D]
+	(No symbol) [0x00007FF78CC9C44B]
+	(No symbol) [0x00007FF78CC9655C]
+	(No symbol) [0x00007FF78CC91B2D]
+	(No symbol) [0x00007FF78CCE5D0B]
+	(No symbol) [0x00007FF78CCE52E0]
+	(No symbol) [0x00007FF78CCD7883]
+	(No symbol) [0x00007FF78CCA0550]
+	(No symbol) [0x00007FF78CCA1803]
+	GetHandleVerifier [0x00007FF78D1B72BD+3529853]
+	GetHandleVerifier [0x00007FF78D1CDA22+3621858]
+	GetHandleVerifier [0x00007FF78D1C24D3+3575443]
+	GetHandleVerifier [0x00007FF78CF2B77A+860474]
+	(No symbol) [0x00007FF78CDD088F]
+	(No symbol) [0x00007FF78CDCCBC4]
+	(No symbol) [0x00007FF78CDCCD66]
+	(No symbol) [0x00007FF78CDBC2C9]
+	BaseThreadInitThunk [0x00007FFF5C37259D+29]
+	RtlUserThreadStart [0x00007FFF5D5AAF38+40]
+</msg>
+<arg>${URL:IBank}</arg>
+<arg>${Browser}</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-05-06T15:43:26.661945" elapsed="7.309810">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 136.0.7103.49 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF78CE5FE45+26629]
+	(No symbol) [0x00007FF78CDC6010]
+	(No symbol) [0x00007FF78CC5931A]
+	(No symbol) [0x00007FF78CC9D40D]
+	(No symbol) [0x00007FF78CC9C44B]
+	(No symbol) [0x00007FF78CC9655C]
+	(No symbol) [0x00007FF78CC91B2D]
+	(No symbol) [0x00007FF78CCE5D0B]
+	(No symbol) [0x00007FF78CCE52E0]
+	(No symbol) [0x00007FF78CCD7883]
+	(No symbol) [0x00007FF78CCA0550]
+	(No symbol) [0x00007FF78CCA1803]
+	GetHandleVerifier [0x00007FF78D1B72BD+3529853]
+	GetHandleVerifier [0x00007FF78D1CDA22+3621858]
+	GetHandleVerifier [0x00007FF78D1C24D3+3575443]
+	GetHandleVerifier [0x00007FF78CF2B77A+860474]
+	(No symbol) [0x00007FF78CDD088F]
+	(No symbol) [0x00007FF78CDCCBC4]
+	(No symbol) [0x00007FF78CDCCD66]
+	(No symbol) [0x00007FF78CDBC2C9]
+	BaseThreadInitThunk [0x00007FFF5C37259D+29]
+	RtlUserThreadStart [0x00007FFF5D5AAF38+40]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[contains(@class, 'inputLogin')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[contains(@class, 'inputLogin')]</arg>
+<arg>${ID:dammi}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>xpath=//input[contains(@class, 'inputLogin') and @type='password']</arg>
+<arg>${password:dammi}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(@class, 'mat-raised-button')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:26.661945" elapsed="7.309810">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 136.0.7103.49 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF78CE5FE45+26629]
+	(No symbol) [0x00007FF78CDC6010]
+	(No symbol) [0x00007FF78CC5931A]
+	(No symbol) [0x00007FF78CC9D40D]
+	(No symbol) [0x00007FF78CC9C44B]
+	(No symbol) [0x00007FF78CC9655C]
+	(No symbol) [0x00007FF78CC91B2D]
+	(No symbol) [0x00007FF78CCE5D0B]
+	(No symbol) [0x00007FF78CCE52E0]
+	(No symbol) [0x00007FF78CCD7883]
+	(No symbol) [0x00007FF78CCA0550]
+	(No symbol) [0x00007FF78CCA1803]
+	GetHandleVerifier [0x00007FF78D1B72BD+3529853]
+	GetHandleVerifier [0x00007FF78D1CDA22+3621858]
+	GetHandleVerifier [0x00007FF78D1C24D3+3575443]
+	GetHandleVerifier [0x00007FF78CF2B77A+860474]
+	(No symbol) [0x00007FF78CDD088F]
+	(No symbol) [0x00007FF78CDCCBC4]
+	(No symbol) [0x00007FF78CDCCD66]
+	(No symbol) [0x00007FF78CDBC2C9]
+	BaseThreadInitThunk [0x00007FFF5C37259D+29]
+	RtlUserThreadStart [0x00007FFF5D5AAF38+40]
+</status>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<arg>ยืนยันการเข้าระบบ</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<arg>ยืนยันการข้าม Pop-up</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+</kw>
+<doc>ทดสอบการทำงาน KYC Manual Key in TC_KYC_001</doc>
+<status status="FAIL" start="2025-05-06T15:43:26.661945" elapsed="7.325503">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 136.0.7103.49 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF78CE5FE45+26629]
+	(No symbol) [0x00007FF78CDC6010]
+	(No symbol) [0x00007FF78CC5931A]
+	(No symbol) [0x00007FF78CC9D40D]
+	(No symbol) [0x00007FF78CC9C44B]
+	(No symbol) [0x00007FF78CC9655C]
+	(No symbol) [0x00007FF78CC91B2D]
+	(No symbol) [0x00007FF78CCE5D0B]
+	(No symbol) [0x00007FF78CCE52E0]
+	(No symbol) [0x00007FF78CCD7883]
+	(No symbol) [0x00007FF78CCA0550]
+	(No symbol) [0x00007FF78CCA1803]
+	GetHandleVerifier [0x00007FF78D1B72BD+3529853]
+	GetHandleVerifier [0x00007FF78D1CDA22+3621858]
+	GetHandleVerifier [0x00007FF78D1C24D3+3575443]
+	GetHandleVerifier [0x00007FF78CF2B77A+860474]
+	(No symbol) [0x00007FF78CDD088F]
+	(No symbol) [0x00007FF78CDCCBC4]
+	(No symbol) [0x00007FF78CDCCD66]
+	(No symbol) [0x00007FF78CDBC2C9]
+	BaseThreadInitThunk [0x00007FFF5C37259D+29]
+	RtlUserThreadStart [0x00007FFF5D5AAF38+40]
+</status>
+</test>
+<test id="s1-t2" name="2.เข้าหน้าจอKYC เลือกระบบ Manual Key in" line="61">
+<kw name="เข้าหน้าจอKYC เลือกระบบ Manual Key in" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-06T15:43:33.987448" level="INFO">Clicking element 'xpath=//a[contains(@class, 'sidebar-link') and .//div[contains(text(), 'KYC')]]'.</msg>
+<msg time="2025-05-06T15:43:33.987448" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-06T15:43:33.987448" level="FAIL">No browser is open.</msg>
+<arg>${KYC-ไทย}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-06T15:43:33.987448" elapsed="0.015576">No browser is open.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ยืนยันตัวตน}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:34.003024" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ไทย Manual Key In}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:34.003024" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:33.987448" elapsed="0.015576">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:33.987448" elapsed="0.015576">No browser is open.</status>
+</test>
+<test id="s1-t3" name="3.ระบุข้อมูล" line="65">
+<kw name="เรียกเลขประจำตัวประชาชน" owner="KYC Variables">
+<kw name="สุ่มเลขบัตร13หลัก" owner="KYC Variables">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-05-06T15:43:34.021092" level="INFO">${random_number} = 6379111616006</msg>
+<var>${random_number}</var>
+<arg>random.randint(${MIN}, ${MAX})</arg>
+<arg>modules=random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-05-06T15:43:34.021092" level="INFO">${random_number} = 6379111616006</msg>
+<arg>${random_number}</arg>
+<arg>${random_number}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${random_number}</value>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</return>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</kw>
+<kw name="ใช้งานเลขบัตร" owner="KYC Variables">
+<kw name="สุ่มเลขบัตร13หลัก" owner="KYC Variables">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-05-06T15:43:34.021092" level="INFO">${random_number} = 3298414342826</msg>
+<var>${random_number}</var>
+<arg>random.randint(${MIN}, ${MAX})</arg>
+<arg>modules=random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-05-06T15:43:34.021092" level="INFO">${random_number} = 3298414342826</msg>
+<arg>${random_number}</arg>
+<arg>${random_number}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${random_number}</value>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</return>
+<msg time="2025-05-06T15:43:34.021092" level="INFO">${เลขประจำตัวประชาชน} = 3298414342826</msg>
+<var>${เลขประจำตัวประชาชน}</var>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-05-06T15:43:34.021092" level="INFO">${เลขประจำตัวประชาชน} = 3298414342826</msg>
+<arg>${เลขประจำตัวประชาชน}</arg>
+<arg>${เลขประจำตัวประชาชน}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${เลขประจำตัวประชาชน}</value>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</return>
+<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-05-06T15:43:34.018657" elapsed="0.002435"/>
+</kw>
+<kw name="ระบุข้อมูล Manual Key in TH" owner="ManualKeyIn Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-06T15:43:34.021092" level="INFO">Typing text '3298414342826' into text field '//input[@name='idCard']'.</msg>
+<msg time="2025-05-06T15:43:34.021092" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-06T15:43:34.021092" level="FAIL">No browser is open.</msg>
+<arg>${เลขประจำตัวประชาชน_xpath}</arg>
+<arg>${เลขประจำตัวประชาชน}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-06T15:43:34.021092" elapsed="0.031743">No browser is open.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${คำนำหน้าชื่อTH_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${คำนำหน้าชื่อTH_เลือก}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${ชื่อTH_xpath}</arg>
+<arg>${ชื่อTH}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${นามสกุลTH_xpath}</arg>
+<arg>${นามสกุลTH}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:34.021092" elapsed="0.031743">No browser is open.</status>
+</kw>
+<kw name="ระบุข้อมูล Manual Key in EN" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+</kw>
+<kw name="ระบุข้อมูลวันเกิด" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+</kw>
+<kw name="อัพโหลดไฟล์" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+</kw>
+<kw name="กดปุ่มบันทึก" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:34.003024" elapsed="0.049811">No browser is open.</status>
+</test>
+<test id="s1-t4" name="4.ส่วนที่2" line="72">
+<kw name="ข้อมูล Consent ยินยอม" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-06T15:43:34.067877" level="INFO">Clicking element '(//label[@for='mat-radio-2-input'])[1]'.</msg>
+<msg time="2025-05-06T15:43:34.071104" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-06T15:43:34.071104" level="FAIL">No browser is open.</msg>
+<arg>${ยินยอม1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-06T15:43:34.067877" elapsed="0.003227">No browser is open.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ยินยอม2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ยินยอม3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${ยินยอม4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:34.067877" elapsed="0.003227">No browser is open.</status>
+</kw>
+<kw name="ข้อมูลประเภท บุคคลธรรมดา&amp;ลูกค้าธนาคาร" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
+</kw>
+<kw name="ข้อมูลประเภทเปิดบัญชีใหม่" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
+</kw>
+<kw name="ข้อมูลการตรวจสอบความเสี่ยงและ Watchlist" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
+</kw>
+<kw name="วันที่ครบกำหนดทบทวนความเสี่ยง" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:34.066865" elapsed="0.004239">No browser is open.</status>
+</test>
+<test id="s1-t5" name="5.ส่วนเพิ่มเติม" line="78">
+<kw name="กดส่วนเพิ่มเติม" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-06T15:43:38.150278" level="INFO">Clicking element '//button[.//mat-icon[normalize-space(text())='open_in_new']]'.</msg>
+<msg time="2025-05-06T15:43:38.150278" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-06T15:43:38.150278" level="FAIL">No browser is open.</msg>
+<arg>${ปุ่มเพื่มเติม}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-06T15:43:38.150278" elapsed="0.000000">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:38.150278" elapsed="0.000000">No browser is open.</status>
+</kw>
+<kw name="ระบุข้อมูลส่วนของเพิ่มเติม" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:38.150278" elapsed="0.000000"/>
+</kw>
+<kw name="กดปุ่มบันทึก" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:38.150278" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:34.071104" elapsed="4.079174">No browser is open.</status>
+</test>
+<test id="s1-t6" name="6.ส่วนอนุมัติ" line="82">
+<kw name="ยืนยันสถานะ KYC อนุมัติ KYC (Approve)" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-06T15:43:38.167236" level="INFO">Clicking element '(//mat-radio-button[.//span[text()='อนุมัติ KYC (Approve)']])[1]'.</msg>
+<msg time="2025-05-06T15:43:38.167236" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-06T15:43:38.167236" level="FAIL">No browser is open.</msg>
+<arg>${อนุมัติ KYC (Approve)}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-05-06T15:43:38.167236" elapsed="0.000000">No browser is open.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${ยืนยันสถานะ KYC_ระบุเหตุผล}</arg>
+<arg>${KYC_ระบุเหตุผล}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-06T15:43:38.167236" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:38.167236" elapsed="0.000000">No browser is open.</status>
+</kw>
+<kw name="การอนุมัติโดยผู้จัดการสาขาอนุมัติ KYC (Approve)" owner="ManualKeyIn Keywords">
+<status status="NOT RUN" start="2025-05-06T15:43:38.167236" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-05-06T15:43:38.150278" elapsed="0.016958">No browser is open.</status>
+</test>
+<status status="FAIL" start="2025-05-06T15:43:26.059436" elapsed="12.107800"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="TC KYC 001">TC KYC 001</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-06T15:43:26.644952" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\KYC\ยืนยันตัวตน\KYC Variables.robot' on line 16: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-05-06T15:43:26.644952" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\KYC\ยืนยันตัวตน\KYC Variables.robot' on line 21: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-05-06T15:43:28.705084" level="WARN">The chromedriver version (134.0.6998.88) detected in PATH at C:\Users\suravesi\AppData\Local\Programs\Python\Python38\chromedriver.exe might not be compatible with the detected chrome version (136.0.7103.49); currently, chromedriver 136.0.7103.49 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

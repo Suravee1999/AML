@@ -27,6 +27,7 @@ ${MAX}    9999999999999
     Log To Console   รหัสCIF ที่เก็บได้: ${CIF}
     Set Suite Variable    ${CIF}    ${CIF}
     [Return]    ${CIF}
+
 สุ่มเลขบัตร13หลัก
      ${random_number}=    Evaluate    random.randint(${MIN}, ${MAX})    modules=random
     Set Suite Variable     ${random_number}     ${random_number}

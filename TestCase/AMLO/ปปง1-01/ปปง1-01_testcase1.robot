@@ -35,8 +35,8 @@ ${ระบุเหตุผลเลือกวัตถุประสงค
 1.open web IBank & Login
         [Documentation]   ทดสอบการยื่นคำร้อง manual ของ ปปง.1-01 กรณี ยื่นคำร้องเอง
         Enteropen web IBank & Login
-        Run Keyword And Ignore Error    ยืนยันการเข้าระบบ
-        Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
+        Run Keyword And Ignore Error        ยืนยันการเข้าระบบ
+        Run Keyword And Ignore Error     ยืนยันการข้าม Pop-up
 2.เลือก AML & ยื่นคำร้อง
 
 
