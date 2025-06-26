@@ -1,401 +1,805 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.8.7 on win32)" generated="2025-05-06T15:43:26.043494" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.8.7 on win32)" generated="2025-06-25T16:17:22.534548" rpa="false" schemaversion="5">
 <suite id="s1" name="TC KYC 001" source="D:\AML_Project\TestCase\KYC\Manual Key In\TC_KYC_001.robot">
-<test id="s1-t1" name="1.open web IBank &amp; Login" line="56">
+<test id="s1-t1" name="1.open web IBank &amp; Login" line="55">
 <kw name="Enteropen web IBank &amp; Login" owner="main_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-06T15:43:26.661945" level="INFO">Opening browser 'chrome' to base url 'https://172.26.59.117/login'.</msg>
-<msg time="2025-05-06T15:43:28.705084" level="WARN">The chromedriver version (134.0.6998.88) detected in PATH at C:\Users\suravesi\AppData\Local\Programs\Python\Python38\chromedriver.exe might not be compatible with the detected chrome version (136.0.7103.49); currently, chromedriver 136.0.7103.49 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg time="2025-05-06T15:43:33.955721" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-05-06T15:43:33.955721" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 136.0.7103.49 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-	GetHandleVerifier [0x00007FF78CE5FE45+26629]
-	(No symbol) [0x00007FF78CDC6010]
-	(No symbol) [0x00007FF78CC5931A]
-	(No symbol) [0x00007FF78CC9D40D]
-	(No symbol) [0x00007FF78CC9C44B]
-	(No symbol) [0x00007FF78CC9655C]
-	(No symbol) [0x00007FF78CC91B2D]
-	(No symbol) [0x00007FF78CCE5D0B]
-	(No symbol) [0x00007FF78CCE52E0]
-	(No symbol) [0x00007FF78CCD7883]
-	(No symbol) [0x00007FF78CCA0550]
-	(No symbol) [0x00007FF78CCA1803]
-	GetHandleVerifier [0x00007FF78D1B72BD+3529853]
-	GetHandleVerifier [0x00007FF78D1CDA22+3621858]
-	GetHandleVerifier [0x00007FF78D1C24D3+3575443]
-	GetHandleVerifier [0x00007FF78CF2B77A+860474]
-	(No symbol) [0x00007FF78CDD088F]
-	(No symbol) [0x00007FF78CDCCBC4]
-	(No symbol) [0x00007FF78CDCCD66]
-	(No symbol) [0x00007FF78CDBC2C9]
-	BaseThreadInitThunk [0x00007FFF5C37259D+29]
-	RtlUserThreadStart [0x00007FFF5D5AAF38+40]
-</msg>
+<msg time="2025-06-25T16:17:22.974470" level="INFO">Opening browser 'chrome' to base url 'https://dev.aml.ibank.co.th/'.</msg>
+<msg time="2025-06-25T16:17:24.901111" level="WARN">The chromedriver version (136.0.7103.94) detected in PATH at C:\Users\suravesi\AppData\Local\Programs\Python\Python38\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.120); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>${URL:IBank}</arg>
 <arg>${Browser}</arg>
 <arg>options=add_argument("--ignore-certificate-errors")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-05-06T15:43:26.661945" elapsed="7.309810">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 136.0.7103.49 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-	GetHandleVerifier [0x00007FF78CE5FE45+26629]
-	(No symbol) [0x00007FF78CDC6010]
-	(No symbol) [0x00007FF78CC5931A]
-	(No symbol) [0x00007FF78CC9D40D]
-	(No symbol) [0x00007FF78CC9C44B]
-	(No symbol) [0x00007FF78CC9655C]
-	(No symbol) [0x00007FF78CC91B2D]
-	(No symbol) [0x00007FF78CCE5D0B]
-	(No symbol) [0x00007FF78CCE52E0]
-	(No symbol) [0x00007FF78CCD7883]
-	(No symbol) [0x00007FF78CCA0550]
-	(No symbol) [0x00007FF78CCA1803]
-	GetHandleVerifier [0x00007FF78D1B72BD+3529853]
-	GetHandleVerifier [0x00007FF78D1CDA22+3621858]
-	GetHandleVerifier [0x00007FF78D1C24D3+3575443]
-	GetHandleVerifier [0x00007FF78CF2B77A+860474]
-	(No symbol) [0x00007FF78CDD088F]
-	(No symbol) [0x00007FF78CDCCBC4]
-	(No symbol) [0x00007FF78CDCCD66]
-	(No symbol) [0x00007FF78CDBC2C9]
-	BaseThreadInitThunk [0x00007FFF5C37259D+29]
-	RtlUserThreadStart [0x00007FFF5D5AAF38+40]
-</status>
+<status status="PASS" start="2025-06-25T16:17:22.974470" elapsed="8.570025"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:31.544495" elapsed="0.042562"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:31.587057" elapsed="0.000000"/>
 </kw>
+<status status="PASS" start="2025-06-25T16:17:22.974470" elapsed="8.612587"/>
+</kw>
+<kw name="เข้าด้วยUserระดับพนักงาน" owner="main_keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[contains(@class, 'inputLogin')]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:31.589571" elapsed="3.251658"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:17:34.841229" level="INFO">Typing text '540763' into text field 'xpath=//input[contains(@class, 'inputLogin')]'.</msg>
 <arg>xpath=//input[contains(@class, 'inputLogin')]</arg>
-<arg>${ID:dammi}</arg>
+<arg>${ID:พนักงาน}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:34.841229" elapsed="1.722794"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:17:36.565050" level="INFO">Typing password into text field 'xpath=//input[contains(@class, 'inputLogin') and @type='password']'.</msg>
+<msg time="2025-06-25T16:17:37.676529" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>xpath=//input[contains(@class, 'inputLogin') and @type='password']</arg>
-<arg>${password:dammi}</arg>
+<arg>${password:พนักงาน}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:36.565050" elapsed="1.769622"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:17:38.334672" level="INFO">Clicking element '//button[contains(@class, 'mat-raised-button')]'.</msg>
 <arg>//button[contains(@class, 'mat-raised-button')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2025-05-06T15:43:26.661945" elapsed="7.309810">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 136.0.7103.49 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-	GetHandleVerifier [0x00007FF78CE5FE45+26629]
-	(No symbol) [0x00007FF78CDC6010]
-	(No symbol) [0x00007FF78CC5931A]
-	(No symbol) [0x00007FF78CC9D40D]
-	(No symbol) [0x00007FF78CC9C44B]
-	(No symbol) [0x00007FF78CC9655C]
-	(No symbol) [0x00007FF78CC91B2D]
-	(No symbol) [0x00007FF78CCE5D0B]
-	(No symbol) [0x00007FF78CCE52E0]
-	(No symbol) [0x00007FF78CCD7883]
-	(No symbol) [0x00007FF78CCA0550]
-	(No symbol) [0x00007FF78CCA1803]
-	GetHandleVerifier [0x00007FF78D1B72BD+3529853]
-	GetHandleVerifier [0x00007FF78D1CDA22+3621858]
-	GetHandleVerifier [0x00007FF78D1C24D3+3575443]
-	GetHandleVerifier [0x00007FF78CF2B77A+860474]
-	(No symbol) [0x00007FF78CDD088F]
-	(No symbol) [0x00007FF78CDCCBC4]
-	(No symbol) [0x00007FF78CDCCD66]
-	(No symbol) [0x00007FF78CDBC2C9]
-	BaseThreadInitThunk [0x00007FFF5C37259D+29]
-	RtlUserThreadStart [0x00007FFF5D5AAF38+40]
-</status>
+<status status="PASS" start="2025-06-25T16:17:38.334672" elapsed="1.221869"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="ยืนยันการเข้าระบบ" owner="main_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-25T16:17:39.558146" elapsed="2.507725"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:17:42.065871" level="INFO">Clicking element '//button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]'.</msg>
+<arg>//button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:17:42.065871" elapsed="1.150696"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:17:39.558146" elapsed="3.658421"/>
+</kw>
 <arg>ยืนยันการเข้าระบบ</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:39.557302" elapsed="3.659265"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="ยืนยันการข้าม Pop-up" owner="main_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:17:49.065873" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-242.png"&gt;&lt;img src="selenium-screenshot-242.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-25T16:17:49.065873" level="FAIL">Element 'xpath=//button[.//span[normalize-space(text())='Close']]' not visible after 5 seconds.</msg>
+<arg>xpath=//button[.//span[normalize-space(text())='Close']]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-06-25T16:17:43.218721" elapsed="5.855460">Element 'xpath=//button[.//span[normalize-space(text())='Close']]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//button[.//span[normalize-space(text())='Close']]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-06-25T16:17:49.076696" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-25T16:17:43.218124" elapsed="5.859404">Element 'xpath=//button[.//span[normalize-space(text())='Close']]' not visible after 5 seconds.</status>
+</kw>
 <arg>ยืนยันการข้าม Pop-up</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:33.971755" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:43.216567" elapsed="5.860961"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:17:31.589571" elapsed="17.487957"/>
 </kw>
 <doc>ทดสอบการทำงาน KYC Manual Key in TC_KYC_001</doc>
-<status status="FAIL" start="2025-05-06T15:43:26.661945" elapsed="7.325503">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 134
-Current browser version is 136.0.7103.49 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Stacktrace:
-	GetHandleVerifier [0x00007FF78CE5FE45+26629]
-	(No symbol) [0x00007FF78CDC6010]
-	(No symbol) [0x00007FF78CC5931A]
-	(No symbol) [0x00007FF78CC9D40D]
-	(No symbol) [0x00007FF78CC9C44B]
-	(No symbol) [0x00007FF78CC9655C]
-	(No symbol) [0x00007FF78CC91B2D]
-	(No symbol) [0x00007FF78CCE5D0B]
-	(No symbol) [0x00007FF78CCE52E0]
-	(No symbol) [0x00007FF78CCD7883]
-	(No symbol) [0x00007FF78CCA0550]
-	(No symbol) [0x00007FF78CCA1803]
-	GetHandleVerifier [0x00007FF78D1B72BD+3529853]
-	GetHandleVerifier [0x00007FF78D1CDA22+3621858]
-	GetHandleVerifier [0x00007FF78D1C24D3+3575443]
-	GetHandleVerifier [0x00007FF78CF2B77A+860474]
-	(No symbol) [0x00007FF78CDD088F]
-	(No symbol) [0x00007FF78CDCCBC4]
-	(No symbol) [0x00007FF78CDCCD66]
-	(No symbol) [0x00007FF78CDBC2C9]
-	BaseThreadInitThunk [0x00007FFF5C37259D+29]
-	RtlUserThreadStart [0x00007FFF5D5AAF38+40]
-</status>
+<status status="PASS" start="2025-06-25T16:17:22.974470" elapsed="26.103058"/>
 </test>
-<test id="s1-t2" name="2.เข้าหน้าจอKYC เลือกระบบ Manual Key in" line="61">
+<test id="s1-t2" name="2.เข้าหน้าจอKYC เลือกระบบ Manual Key in" line="59">
 <kw name="เข้าหน้าจอKYC เลือกระบบ Manual Key in" owner="ManualKeyIn Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${KYC-ไทย}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-25T16:17:49.077528" elapsed="1.038555"/>
+</kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-06T15:43:33.987448" level="INFO">Clicking element 'xpath=//a[contains(@class, 'sidebar-link') and .//div[contains(text(), 'KYC')]]'.</msg>
-<msg time="2025-05-06T15:43:33.987448" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-05-06T15:43:33.987448" level="FAIL">No browser is open.</msg>
+<msg time="2025-06-25T16:17:50.116083" level="INFO">Clicking element 'xpath=//a[contains(@class, 'sidebar-link') and .//div[contains(text(), 'KYC')]]'.</msg>
 <arg>${KYC-ไทย}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-05-06T15:43:33.987448" elapsed="0.015576">No browser is open.</status>
+<status status="PASS" start="2025-06-25T16:17:50.116083" elapsed="1.245776"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ยืนยันตัวตน}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-25T16:17:51.361859" elapsed="1.052926"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:17:52.414785" level="INFO">Clicking element 'xpath=//a[contains(@class, 'mat-list-item') and contains(., 'ยืนยันตัวตน')]'.</msg>
 <arg>${ยืนยันตัวตน}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:34.003024" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:52.414785" elapsed="1.180416"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ไทย Manual Key In}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-25T16:17:53.595201" elapsed="2.515725"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:17:56.110926" level="INFO">Clicking element '//button[h4[contains(text(), 'Manual Key In')]]'.</msg>
 <arg>${ไทย Manual Key In}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:34.003024" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:56.110926" elapsed="1.307626"/>
 </kw>
-<status status="FAIL" start="2025-05-06T15:43:33.987448" elapsed="0.015576">No browser is open.</status>
+<status status="PASS" start="2025-06-25T16:17:49.077528" elapsed="8.341024"/>
 </kw>
-<status status="FAIL" start="2025-05-06T15:43:33.987448" elapsed="0.015576">No browser is open.</status>
+<status status="PASS" start="2025-06-25T16:17:49.077528" elapsed="8.341024"/>
 </test>
-<test id="s1-t3" name="3.ระบุข้อมูล" line="65">
+<test id="s1-t3" name="3.ระบุข้อมูลส่วนของManual Key in" line="63">
+<kw name="ระบุเลขที่บัตรประจำตัวประชาชนและlaserCode" owner="ManualKeyIn Keywords">
 <kw name="เรียกเลขประจำตัวประชาชน" owner="KYC Variables">
 <kw name="สุ่มเลขบัตร13หลัก" owner="KYC Variables">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-06T15:43:34.021092" level="INFO">${random_number} = 6379111616006</msg>
-<var>${random_number}</var>
-<arg>random.randint(${MIN}, ${MAX})</arg>
+<msg time="2025-06-25T16:17:57.418552" level="INFO">${digits} = [9, 9, 9, 7, 4, 9, 7, 1, 7, 4, 7, 7]</msg>
+<var>${digits}</var>
+<arg>[random.randint(0,9) for _ in range(12)]</arg>
 <arg>modules=random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:17:57.418552" level="INFO">${total} = 643</msg>
+<var>${total}</var>
+<arg>sum([x*(13-i) for i,x in enumerate(${digits})])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:17:57.418552" level="INFO">${check} = 6</msg>
+<var>${check}</var>
+<arg>(11 - (${total} % 11)) % 10</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:17:57.418552" level="INFO">${digits} = [9, 9, 9, 7, 4, 9, 7, 1, 7, 4, 7, 7, 6]</msg>
+<var>${digits}</var>
+<arg>${digits} + [${check}]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:17:57.418552" level="INFO">${random_number} = 9997497174776</msg>
+<var>${random_number}</var>
+<arg>''.join(str(x) for x in ${digits})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-05-06T15:43:34.021092" level="INFO">${random_number} = 6379111616006</msg>
+<msg time="2025-06-25T16:17:57.434169" level="INFO">${random_number} = 9997497174776</msg>
 <arg>${random_number}</arg>
 <arg>${random_number}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="0.015617"/>
 </kw>
 <return>
 <value>${random_number}</value>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="0.015617"/>
 </kw>
 <kw name="ใช้งานเลขบัตร" owner="KYC Variables">
 <kw name="สุ่มเลขบัตร13หลัก" owner="KYC Variables">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-05-06T15:43:34.021092" level="INFO">${random_number} = 3298414342826</msg>
-<var>${random_number}</var>
-<arg>random.randint(${MIN}, ${MAX})</arg>
+<msg time="2025-06-25T16:17:57.434169" level="INFO">${digits} = [3, 2, 2, 9, 0, 8, 1, 0, 9, 0, 5, 0]</msg>
+<var>${digits}</var>
+<arg>[random.randint(0,9) for _ in range(12)]</arg>
 <arg>modules=random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:17:57.434169" level="INFO">${total} = 306</msg>
+<var>${total}</var>
+<arg>sum([x*(13-i) for i,x in enumerate(${digits})])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:17:57.434169" level="INFO">${check} = 2</msg>
+<var>${check}</var>
+<arg>(11 - (${total} % 11)) % 10</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:17:57.434169" level="INFO">${digits} = [3, 2, 2, 9, 0, 8, 1, 0, 9, 0, 5, 0, 2]</msg>
+<var>${digits}</var>
+<arg>${digits} + [${check}]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:17:57.434169" level="INFO">${random_number} = 3229081090502</msg>
+<var>${random_number}</var>
+<arg>''.join(str(x) for x in ${digits})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-05-06T15:43:34.021092" level="INFO">${random_number} = 3298414342826</msg>
+<msg time="2025-06-25T16:17:57.434169" level="INFO">${random_number} = 3229081090502</msg>
 <arg>${random_number}</arg>
 <arg>${random_number}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.000000"/>
 </kw>
 <return>
 <value>${random_number}</value>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.000000"/>
 </return>
-<msg time="2025-05-06T15:43:34.021092" level="INFO">${เลขประจำตัวประชาชน} = 3298414342826</msg>
+<msg time="2025-06-25T16:17:57.434169" level="INFO">${เลขประจำตัวประชาชน} = 3229081090502</msg>
 <var>${เลขประจำตัวประชาชน}</var>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2025-05-06T15:43:34.021092" level="INFO">${เลขประจำตัวประชาชน} = 3298414342826</msg>
+<msg time="2025-06-25T16:17:57.465684" level="INFO">${เลขประจำตัวประชาชน} = 3229081090502</msg>
 <arg>${เลขประจำตัวประชาชน}</arg>
 <arg>${เลขประจำตัวประชาชน}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.031515"/>
 </kw>
 <return>
 <value>${เลขประจำตัวประชาชน}</value>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.465684" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2025-05-06T15:43:34.021092" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:17:57.434169" elapsed="0.031515"/>
 </kw>
-<status status="PASS" start="2025-05-06T15:43:34.018657" elapsed="0.002435"/>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="0.047132"/>
 </kw>
-<kw name="ระบุข้อมูล Manual Key in TH" owner="ManualKeyIn Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${เลขประจำตัวประชาชน_xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-25T16:17:57.465684" elapsed="1.072394"/>
+</kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-06T15:43:34.021092" level="INFO">Typing text '3298414342826' into text field '//input[@name='idCard']'.</msg>
-<msg time="2025-05-06T15:43:34.021092" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-05-06T15:43:34.021092" level="FAIL">No browser is open.</msg>
+<msg time="2025-06-25T16:17:58.538078" level="INFO">Typing text '3229081090502' into text field '//input[@name='idCard']'.</msg>
 <arg>${เลขประจำตัวประชาชน_xpath}</arg>
 <arg>${เลขประจำตัวประชาชน}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-05-06T15:43:34.021092" elapsed="0.031743">No browser is open.</status>
+<status status="PASS" start="2025-06-25T16:17:58.538078" elapsed="1.842800"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${คำนำหน้าชื่อTH_xpath}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+<kw name="สุ่มเลเซอร์โค้ด" owner="KYC Variables">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:18:00.380878" level="INFO">${letters} = VW</msg>
+<var>${letters}</var>
+<arg>''.join(random.choices(string.ascii_uppercase, k=2))</arg>
+<arg>modules=random,string</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:18:00.380878" elapsed="0.000000"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${คำนำหน้าชื่อTH_เลือก}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-06-25T16:18:00.380878" level="INFO">${numbers} = 0018696474</msg>
+<var>${numbers}</var>
+<arg>''.join(random.choices(string.digits, k=10))</arg>
+<arg>modules=random,string</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-06-25T16:18:00.380878" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2025-06-25T16:18:00.380878" level="INFO">${random_laser_code} = VW0018696474</msg>
+<var>${random_laser_code}</var>
+<arg>SEPARATOR=</arg>
+<arg>${letters}</arg>
+<arg>${numbers}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2025-06-25T16:18:00.380878" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2025-06-25T16:18:00.380878" level="INFO">${random_laser_code} = VW0018696474</msg>
+<arg>${random_laser_code}</arg>
+<arg>${random_laser_code}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2025-06-25T16:18:00.380878" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${random_laser_code}</value>
+<status status="PASS" start="2025-06-25T16:18:00.380878" elapsed="0.000000"/>
+</return>
+<status status="PASS" start="2025-06-25T16:18:00.380878" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${laserCode_xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-25T16:18:00.380878" elapsed="1.067634"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:01.448512" level="INFO">Typing text 'VW0018696474' into text field '//input[@name='laserCode']'.</msg>
+<arg>${laserCode_xpath}</arg>
+<arg>${random_laser_code}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:01.448512" elapsed="1.821735"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>เลขที่บัตร :${เลขประจำตัวประชาชน}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-06-25T16:18:03.270247" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>laser_code :${random_laser_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-06-25T16:18:03.270247" elapsed="0.005020"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-25T16:18:03.275267" level="INFO">เลขที่บัตร :3229081090502</msg>
+<arg>เลขที่บัตร :${เลขประจำตัวประชาชน}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-25T16:18:03.275267" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-25T16:18:03.275267" level="INFO">laser_code :VW0018696474</msg>
+<arg>laser_code :${random_laser_code}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-25T16:18:03.275267" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="5.856715"/>
+</kw>
+<kw name="ระบุข้อมูล Manual Key in TH" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:03.275267" level="INFO">Clicking element '(//mat-select[.//span[contains(text(),'โปรดระบุ')]])[1]'.</msg>
+<arg>${คำนำหน้าชื่อTH_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:03.275267" elapsed="1.214583"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:04.489850" level="INFO">Clicking element '//mat-option/span[normalize-space(text())='นาย']'.</msg>
+<arg>${คำนำหน้าชื่อTH_เลือก}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:04.489850" elapsed="1.206221"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:05.697521" level="INFO">Typing text 'เทส' into text field '//input[@name='thFirstName']'.</msg>
 <arg>${ชื่อTH_xpath}</arg>
 <arg>${ชื่อTH}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:18:05.697521" elapsed="1.753662"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:07.451183" level="INFO">Typing text 'สุดหล่อ' into text field '//input[@name='thLastName']'.</msg>
 <arg>${นามสกุลTH_xpath}</arg>
 <arg>${นามสกุลTH}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:18:07.451183" elapsed="1.809562"/>
 </kw>
-<status status="FAIL" start="2025-05-06T15:43:34.021092" elapsed="0.031743">No browser is open.</status>
+<status status="PASS" start="2025-06-25T16:18:03.275267" elapsed="5.985478"/>
 </kw>
 <kw name="ระบุข้อมูล Manual Key in EN" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
-</kw>
-<kw name="ระบุข้อมูลวันเกิด" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
-</kw>
-<kw name="อัพโหลดไฟล์" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
-</kw>
-<kw name="กดปุ่มบันทึก" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:34.052835" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2025-05-06T15:43:34.003024" elapsed="0.049811">No browser is open.</status>
-</test>
-<test id="s1-t4" name="4.ส่วนที่2" line="72">
-<kw name="ข้อมูล Consent ยินยอม" owner="ManualKeyIn Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-06T15:43:34.067877" level="INFO">Clicking element '(//label[@for='mat-radio-2-input'])[1]'.</msg>
-<msg time="2025-05-06T15:43:34.071104" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-05-06T15:43:34.071104" level="FAIL">No browser is open.</msg>
-<arg>${ยินยอม1}</arg>
+<msg time="2025-06-25T16:18:09.260745" level="INFO">Clicking element '(//mat-select[.//span[contains(text(),'โปรดระบุ')]])[1]'.</msg>
+<arg>${คำนำหน้าชื่อEN_xpath}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-05-06T15:43:34.067877" elapsed="0.003227">No browser is open.</status>
+<status status="PASS" start="2025-06-25T16:18:09.260745" elapsed="1.214519"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>${ยินยอม2}</arg>
+<msg time="2025-06-25T16:18:10.477218" level="INFO">Clicking element '//mat-option/span[normalize-space(text())='Mr.']'.</msg>
+<arg>${คำนำหน้าชื่อEN_เลือก}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${ยินยอม3}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${ยินยอม4}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2025-05-06T15:43:34.067877" elapsed="0.003227">No browser is open.</status>
-</kw>
-<kw name="ข้อมูลประเภท บุคคลธรรมดา&amp;ลูกค้าธนาคาร" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
-</kw>
-<kw name="ข้อมูลประเภทเปิดบัญชีใหม่" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
-</kw>
-<kw name="ข้อมูลการตรวจสอบความเสี่ยงและ Watchlist" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
-</kw>
-<kw name="วันที่ครบกำหนดทบทวนความเสี่ยง" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:34.071104" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2025-05-06T15:43:34.066865" elapsed="0.004239">No browser is open.</status>
-</test>
-<test id="s1-t5" name="5.ส่วนเพิ่มเติม" line="78">
-<kw name="กดส่วนเพิ่มเติม" owner="ManualKeyIn Keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-06T15:43:38.150278" level="INFO">Clicking element '//button[.//mat-icon[normalize-space(text())='open_in_new']]'.</msg>
-<msg time="2025-05-06T15:43:38.150278" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-05-06T15:43:38.150278" level="FAIL">No browser is open.</msg>
-<arg>${ปุ่มเพื่มเติม}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-05-06T15:43:38.150278" elapsed="0.000000">No browser is open.</status>
-</kw>
-<status status="FAIL" start="2025-05-06T15:43:38.150278" elapsed="0.000000">No browser is open.</status>
-</kw>
-<kw name="ระบุข้อมูลส่วนของเพิ่มเติม" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:38.150278" elapsed="0.000000"/>
-</kw>
-<kw name="กดปุ่มบันทึก" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:38.150278" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2025-05-06T15:43:34.071104" elapsed="4.079174">No browser is open.</status>
-</test>
-<test id="s1-t6" name="6.ส่วนอนุมัติ" line="82">
-<kw name="ยืนยันสถานะ KYC อนุมัติ KYC (Approve)" owner="ManualKeyIn Keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-06T15:43:38.167236" level="INFO">Clicking element '(//mat-radio-button[.//span[text()='อนุมัติ KYC (Approve)']])[1]'.</msg>
-<msg time="2025-05-06T15:43:38.167236" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2025-05-06T15:43:38.167236" level="FAIL">No browser is open.</msg>
-<arg>${อนุมัติ KYC (Approve)}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-05-06T15:43:38.167236" elapsed="0.000000">No browser is open.</status>
+<status status="PASS" start="2025-06-25T16:18:10.475264" elapsed="1.180753"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<arg>${ยืนยันสถานะ KYC_ระบุเหตุผล}</arg>
+<msg time="2025-06-25T16:18:11.657866" level="INFO">Typing text 't' into text field '//input[@name='enFirstname']'.</msg>
+<arg>${ชื่อEN_xpath}</arg>
+<arg>${ชื่อEN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:11.657082" elapsed="1.762107"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:13.420503" level="INFO">Typing text 't' into text field '//input[@name='enLastname']'.</msg>
+<arg>${นามสกุลEN_xpath}</arg>
+<arg>${นามสกุลEN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:13.419189" elapsed="1.737320"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:09.260745" elapsed="5.895764"/>
+</kw>
+<kw name="ระบุข้อมูลวันเกิด" owner="ManualKeyIn Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:15.156509" level="INFO">Typing text '11/12/2540' into text field '//input[@name='birthday']'.</msg>
+<arg>${วัน/เดือน/ปี เกิด_xpath}</arg>
+<arg>${วัน/เดือน/ปี เกิด}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:15.156509" elapsed="1.799335"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:16.956898" level="INFO">Typing text '11/12/2560' into text field '//input[@name='issue']'.</msg>
+<arg>${วันที่ออกบัตร_xpath}</arg>
+<arg>${วันที่ออกบัตร}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:16.956898" elapsed="1.855349"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:18.814578" level="INFO">Typing text '11/12/2570' into text field '//input[@name='expire']'.</msg>
+<arg>${วันที่บัตรหมดอายุ_xpath}</arg>
+<arg>${วันที่บัตรหมดอายุ}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:18.813936" elapsed="1.857731"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:15.156509" elapsed="5.515158"/>
+</kw>
+<kw name="ระบุข้อมูลที่อยู่" owner="ManualKeyIn Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:20.671667" level="INFO">Typing text '1' into text field '//input[@name='addressNumber']'.</msg>
+<arg>${เลขที่_xpath}</arg>
+<arg>${เลขที่}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:20.671667" elapsed="1.776896"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:22.448563" level="INFO">Typing text '1' into text field '//input[@name='addressMoo']'.</msg>
+<arg>${หมู่ที่_xpath}</arg>
+<arg>${หมู่ที่}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:22.448563" elapsed="1.764690"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:24.213253" level="INFO">Typing text '1' into text field '//input[@name='addressAlley']'.</msg>
+<arg>${ตรอก_xpath}</arg>
+<arg>${ตรอก}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:24.213253" elapsed="1.746597"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:25.959850" level="INFO">Typing text '1' into text field '//input[@name='addressSoi']'.</msg>
+<arg>${ซอย_xpath}</arg>
+<arg>${ซอย}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:25.959850" elapsed="1.747413"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:27.707263" level="INFO">Typing text '1' into text field '//input[@name='addressRoad']'.</msg>
+<arg>${ถนน_xpath}</arg>
+<arg>${ถนน}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:27.707263" elapsed="1.749253"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:29.457883" level="INFO">Clicking element '(//mat-select[.//span[contains(text(),'โปรดระบุ')]])[1]'.</msg>
+<arg>${จังหวัด_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:29.457883" elapsed="1.197356"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:30.655239" level="INFO">Clicking element 'xpath=//mat-option[.//span[contains(text(),'กรุงเทพ')]]'.</msg>
+<arg>${จังหวัด_เลือก}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:30.655239" elapsed="1.295772"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:31.951011" level="INFO">Clicking element '(//mat-select[.//span[contains(text(),'โปรดระบุ')]])[1]'.</msg>
+<arg>${อำเภอ_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:31.951011" elapsed="1.212172"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:33.164886" level="INFO">Clicking element 'xpath=//mat-option[.//span[contains(text(),'ธนบุรี')]]'.</msg>
+<arg>${อำเภอ_เลือก}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:33.164271" elapsed="1.258047"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:34.422318" level="INFO">Clicking element '(//mat-select[.//span[contains(text(),'โปรดระบุ')]])[1]'.</msg>
+<arg>${ตำบล_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:34.422318" elapsed="1.198767"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:35.621085" level="INFO">Clicking element 'xpath=//mat-option[.//span[contains(text(),'ดาวคะนอง')]]'.</msg>
+<arg>${ตำบล_เลือก}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:35.621085" elapsed="1.201166"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:36.824561" level="INFO">Typing text '12345' into text field '//input[@name='zipCode']'.</msg>
+<arg>${รหัสไปรษณีย์_xpath}</arg>
+<arg>${รหัสไปรษณีย์}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:36.823531" elapsed="1.790003"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:20.671667" elapsed="17.942903"/>
+</kw>
+<kw name="อัพโหลดไฟล์" owner="ManualKeyIn Keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-25T16:18:39.615658" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-25T16:18:38.614570" elapsed="1.001998"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:39.617083" level="INFO">Sending D:\AML_Project\File\รูปบัตรประชาชน.png to browser.</msg>
+<arg>${อัพโหลด_xpath}</arg>
+<arg>${UPLOAD_FILE_PATH}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:39.617083" elapsed="1.118038"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:38.614570" elapsed="2.120551"/>
+</kw>
+<kw name="กดปุ่มบันทึก" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:40.735121" level="INFO">Clicking element '//button[.//span[contains(text(),'บันทึก')]]'.</msg>
+<arg>${ปุ่มบันทึก}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:40.735121" elapsed="1.282064"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:40.735121" elapsed="1.282064"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:17:57.418552" elapsed="44.599417"/>
+</test>
+<test id="s1-t4" name="4.รุบุข้อมูลหน้าCard Informations" line="72">
+<kw name="ข้อมูล Consent ยินยอม" owner="ManualKeyIn Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ยินยอม1}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-25T16:18:42.022283" elapsed="1.047925"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:43.070208" level="INFO">Clicking element '(//label[@for='mat-radio-2-input'])[1]'.</msg>
+<arg>${ยินยอม1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:43.070208" elapsed="1.226088"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:44.296296" level="INFO">Clicking element '(//mat-radio-button[.//span[text()='ยินยอม']])[2]'.</msg>
+<arg>${ยินยอม2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:44.296296" elapsed="1.208853"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:45.505149" level="INFO">Clicking element '(//mat-radio-button[.//span[text()='ยินยอม']])[3]'.</msg>
+<arg>${ยินยอม3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:45.505149" elapsed="1.177281"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:46.682430" level="INFO">Clicking element '(//mat-radio-button[.//span[text()='ยินยอม']])[4]'.</msg>
+<arg>${ยินยอม4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:46.682430" elapsed="1.204137"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:42.022283" elapsed="5.864284"/>
+</kw>
+<kw name="ข้อมูลประเภท บุคคลธรรมดา&amp;ลูกค้าธนาคาร" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:47.888201" level="INFO">Clicking element '(//mat-form-field[.//mat-select[contains(@class,'mat-select')]]//div[contains(@class,'mat-select-arrow-wrapper')])[6]'.</msg>
+<arg>${ประเภท_เลือก}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:47.888201" elapsed="1.217163"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:49.105364" level="INFO">Clicking element '//mat-option//span[normalize-space(text())='บุคคลธรรมดา']'.</msg>
+<arg>${ประเภท_บุคคลธรรมดา}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:49.105364" elapsed="1.203560"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:50.308924" level="INFO">Clicking element '(//mat-form-field[.//mat-select[contains(@class,'mat-select')]]//div[contains(@class,'mat-select-arrow-wrapper')])[7]'.</msg>
+<arg>${ประเภทลูกค้า_เลิอก}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:50.308924" elapsed="1.154545"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:51.463469" level="INFO">Clicking element '//mat-option//span[normalize-space(text())='ลูกค้าธนาคาร']'.</msg>
+<arg>${ประเภทลูกค้า_ลูกค้าธนาคาร}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:51.463469" elapsed="1.195212"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:47.888201" elapsed="4.770480"/>
+</kw>
+<kw name="วัตถุประสงค์การดำเนินการเปิดบัญชีใหม่/เปลี่ยนแปลงข้อมูล" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:52.661346" level="INFO">Clicking element 'xpath=//*[contains(text(), "วัตถุประสงค์การดำเนินการ")]/following::mat-select[1]'.</msg>
+<arg>${วัตถุประสงค์การดำเนินการ}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:52.661346" elapsed="1.197753"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:53.859099" level="INFO">Clicking element '//mat-option//span[normalize-space(.)='เปิดบัญชีใหม่หรือเปลี่ยนแปลงข้อมูล']'.</msg>
+<arg>${วัตถุประสงค์การดำเนินการ_เปิดบัญชีใหม่หรือเปลี่ยนแปลงข้อมูล}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:53.859099" elapsed="1.195455"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:52.661346" elapsed="2.393208"/>
+</kw>
+<kw name="กดส่วนเพิ่มเติม" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:55.058210" level="INFO">Clicking element '//button[.//mat-icon[normalize-space(text())='open_in_new']]'.</msg>
+<arg>${ปุ่มเพื่มเติม_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:55.057466" elapsed="1.332575"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:55.054554" elapsed="1.335487"/>
+</kw>
+<kw name="ระบุข้อมูลส่วนของเพิ่มเติมตรวจหาWatchlist" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:56.390041" level="INFO">Clicking element '//mat-select[@ng-reflect-name='occupation']'.</msg>
+<arg>${อาชีพ_เพื่มเติม_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:56.390041" elapsed="1.217903"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:57.607944" level="INFO">Clicking element '//mat-option[.//span[normalize-space(text())='เกษตรกร ทำนา']]'.</msg>
+<arg>${อาชีพ_เลือก_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:57.607944" elapsed="1.215159"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:18:58.823103" level="INFO">Clicking element '//mat-select[@ng-reflect-name='nationalityCode']'.</msg>
+<arg>${สัญชาติ_เพื่มเติม_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:18:58.823103" elapsed="1.246157"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:00.071238" level="INFO">Clicking element '//mat-option[.//span[normalize-space(text())='TH ไทย']]'.</msg>
+<arg>${สัญชาติ_เลือก_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:00.071238" elapsed="1.193612"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:01.267925" level="INFO">Clicking element '//mat-select[@ng-reflect-name='countryResidence']'.</msg>
+<arg>${ประเทศที่อยู่_เพื่มเติม_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:01.264850" elapsed="1.256408"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:02.522014" level="INFO">Clicking element '//mat-option[.//span[normalize-space(text())='TH ไทย']]'.</msg>
+<arg>${ประเทศที่อยู่_เลือก_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:02.522014" elapsed="1.162091"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:03.684105" level="INFO">Clicking element '//mat-select[@ng-reflect-name='notInThai']'.</msg>
+<arg>${เป็นลูกค้าที่ไม่มีถิ่นที่อยู่ในประเทศไทย_เพื่มเติม_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:03.684105" elapsed="1.154293"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:04.840724" level="INFO">Clicking element '//mat-option[.//span[normalize-space(text())='YES']]'.</msg>
+<arg>${เป็นลูกค้าที่ไม่มีถิ่นที่อยู่ในประเทศไทย_เลือก_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:04.839407" elapsed="1.207703"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:06.047110" level="INFO">Clicking element '//button[.//mat-icon[text()='search'] and .//span[contains(text(),'ตรวจสอบสถานะ Watchlist')]]'.</msg>
+<arg>${ปุ่มตรวจสอบสถานะWatchlist_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:06.047110" elapsed="1.243220"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:07.290330" level="INFO">Clicking element '//mat-select[@ng-reflect-name='accountingOwnerBranch']'.</msg>
+<arg>${สาขาเจ้าของบัญชี_เพื่มเติม_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:07.290330" elapsed="1.235839"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:08.526169" level="INFO">Clicking element '//mat-option[@ng-reflect-value='002800']'.</msg>
+<arg>${สาขาเจ้าของบัญชี_เพื่มเติม}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:08.526169" elapsed="1.187030"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:09.713199" level="INFO">Clicking element '//mat-select[@ng-reflect-name='productType']'.</msg>
+<arg>${ประเภทผลิตภัณฑ์_เพื่มเติม_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:09.713199" elapsed="1.252622"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:10.965821" level="INFO">Clicking element '//mat-option//span[normalize-space(text())='2002 Savings Wadiah (Non-Profit)']'.</msg>
+<arg>${ประเภทผลิตภัณฑ์_เลือก_เพื่มเติม}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:10.965821" elapsed="1.218735"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:12.184556" level="INFO">Clicking element '//mat-select[@ng-reflect-name='factorServices']'.</msg>
+<arg>${ปัจจัยเกี่ยวกับช่องทางและบริการ_เพื่มเติม_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:12.184556" elapsed="1.204835"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:13.389391" level="INFO">Clicking element '//mat-option//span[normalize-space(text())='1']'.</msg>
+<arg>${ปัจจัยเกี่ยวกับช่องทางและบริการ_เลือก_เพื่มเติม}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:13.389391" elapsed="1.188841"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:56.390041" elapsed="18.189853"/>
+</kw>
+<kw name="กดปุ่มตรวจสอบและบันทึก" owner="ManualKeyIn Keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ปุ่มบันทึก_xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-25T16:19:14.582414" elapsed="1.056128"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:15.638542" level="INFO">Clicking element '(//button[.//mat-icon[text()='save'] and .//span[contains(text(),'บันทึก')]])[2]'.</msg>
+<arg>${ปุ่มบันทึก_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:15.638542" elapsed="1.202469"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:19:14.580807" elapsed="2.260204"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:18:42.017969" elapsed="34.825996"/>
+</test>
+<test id="s1-t5" name="5.ยืนยันการอนุมัติ KYC" line="79">
+<kw name="ยืนยันสถานะ KYC อนุมัติ KYC (Approve)" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:16.843965" level="INFO">Clicking element '(//mat-radio-button[.//span[text()='อนุมัติ KYC (Approve)']])[1]'.</msg>
+<arg>${อนุมัติ KYC (Approve)}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:16.843965" elapsed="1.203769"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:18.047734" level="INFO">Typing text 'test' into text field '//textarea[@ng-reflect-maxlength='400']'.</msg>
+<arg>${ระบุเหตุผล_xpath}</arg>
 <arg>${KYC_ระบุเหตุผล}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-06T15:43:38.167236" elapsed="0.000000"/>
+<status status="PASS" start="2025-06-25T16:19:18.047734" elapsed="1.778810"/>
 </kw>
-<status status="FAIL" start="2025-05-06T15:43:38.167236" elapsed="0.000000">No browser is open.</status>
+<status status="PASS" start="2025-06-25T16:19:16.843965" elapsed="2.982579"/>
 </kw>
-<kw name="การอนุมัติโดยผู้จัดการสาขาอนุมัติ KYC (Approve)" owner="ManualKeyIn Keywords">
-<status status="NOT RUN" start="2025-05-06T15:43:38.167236" elapsed="0.000000"/>
+<kw name="กดปุ่มรอตรวจสอบ" owner="ManualKeyIn Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:19.826544" level="INFO">Clicking element 'xpath=//button[.//span[text()='รอตรวจสอบ']]'.</msg>
+<arg>${ปุ่มรอตรวจสอบ_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-25T16:19:19.826544" elapsed="1.223241"/>
 </kw>
-<status status="FAIL" start="2025-05-06T15:43:38.150278" elapsed="0.016958">No browser is open.</status>
+<status status="PASS" start="2025-06-25T16:19:19.826544" elapsed="1.223241"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:19:16.843965" elapsed="4.205820"/>
 </test>
-<status status="FAIL" start="2025-05-06T15:43:26.059436" elapsed="12.107800"/>
+<test id="s1-t6" name="จบการทำงาน" line="84">
+<kw name="จบการทำงาน" owner="main_keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-25T16:19:26.064601" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-25T16:19:21.049785" elapsed="5.015919"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-06-25T16:19:26.846954" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-243.png"&gt;&lt;img src="selenium-screenshot-243.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-06-25T16:19:26.065704" elapsed="0.781250"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-25T16:19:26.846954" level="INFO">Test Teardown Completed</msg>
+<arg>Test Teardown Completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-25T16:19:26.846954" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-25T16:19:26.846954" elapsed="4.580766"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:19:21.049785" elapsed="10.377935"/>
+</kw>
+<status status="PASS" start="2025-06-25T16:19:21.049785" elapsed="10.377935"/>
+</test>
+<status status="PASS" start="2025-06-25T16:17:22.550173" elapsed="128.877547"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="6" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="6" skip="0" id="s1" name="TC KYC 001">TC KYC 001</stat>
+<stat pass="6" fail="0" skip="0" id="s1" name="TC KYC 001">TC KYC 001</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-05-06T15:43:26.644952" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\KYC\ยืนยันตัวตน\KYC Variables.robot' on line 16: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-05-06T15:43:26.644952" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\KYC\ยืนยันตัวตน\KYC Variables.robot' on line 21: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-05-06T15:43:28.705084" level="WARN">The chromedriver version (134.0.6998.88) detected in PATH at C:\Users\suravesi\AppData\Local\Programs\Python\Python38\chromedriver.exe might not be compatible with the detected chrome version (136.0.7103.49); currently, chromedriver 136.0.7103.49 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-06-25T16:17:22.958875" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\KYC\ยืนยันตัวตน\KYC Variables.robot' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-06-25T16:17:22.958875" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\KYC\ยืนยันตัวตน\KYC Variables.robot' on line 23: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-06-25T16:17:22.958875" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\KYC\ยืนยันตัวตน\KYC Variables.robot' on line 33: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-06-25T16:17:22.958875" level="ERROR">Error in file 'D:\AML_Project\Resources\Menu_name\KYC\ยืนยันตัวตน\Manual Key In\Manual Key In Variables.robot' on line 80: Setting variable '${ประเภทลูกค้า_เลือก_xpath}' failed: Resolving variable '${ประเภทลูกค้า}' failed: Variable '${ประเภทล}' not found. Did you mean:
+    ${ประเภท_เลือก}</msg>
+<msg time="2025-06-25T16:17:24.901111" level="WARN">The chromedriver version (136.0.7103.94) detected in PATH at C:\Users\suravesi\AppData\Local\Programs\Python\Python38\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.120); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

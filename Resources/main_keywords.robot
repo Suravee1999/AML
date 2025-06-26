@@ -16,39 +16,48 @@ Enteropen web IBank & Login
     Open Browser    ${URL:IBank}  ${Browser}  options=add_argument("--ignore-certificate-errors")
     Maximize Browser Window
     Set Selenium Speed    0.5s
-    Wait Until Element Is Visible    xpath=//input[contains(@class, 'inputLogin')]    5s
-    Input Text    xpath=//input[contains(@class, 'inputLogin')]    ${ID:พนักงาน}
-    Input Password    xpath=//input[contains(@class, 'inputLogin') and @type='password']    ${password:พนักงาน}
-    Click Element     //button[contains(@class, 'mat-raised-button')]
+
 #################################################################
 
 ################ user การใช้งาน ##########################
-Userระดับพนักงาน
+เข้าด้วยUserระดับพนักงาน
         Wait Until Element Is Visible    xpath=//input[contains(@class, 'inputLogin')]    5s
         Input Text    xpath=//input[contains(@class, 'inputLogin')]    ${ID:พนักงาน}
         Input Password    xpath=//input[contains(@class, 'inputLogin') and @type='password']    ${password:พนักงาน}
         Click Element     //button[contains(@class, 'mat-raised-button')]
+        Run Keyword And Ignore Error    ยืนยันการเข้าระบบ
+        Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
 
-
-Userระดับหัวหน้างาน
+เข้าด้วยUserระดับหัวหน้างาน
         Wait Until Element Is Visible    xpath=//input[contains(@class, 'inputLogin')]    5s
         Input Text    xpath=//input[contains(@class, 'inputLogin')]    ${ID:หัวหน้างาน}
         Input Password    xpath=//input[contains(@class, 'inputLogin') and @type='password']    ${password:หัวหน้างาน}
         Click Element     //button[contains(@class, 'mat-raised-button')]
-
-Userระดับฝ่ายกำกับพนักงาน
+        Run Keyword And Ignore Error    ยืนยันการเข้าระบบ
+        Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
+เข้าด้วยUserระดับฝ่ายกำกับพนักงาน
         Wait Until Element Is Visible    xpath=//input[contains(@class, 'inputLogin')]    5s
         Input Text    xpath=//input[contains(@class, 'inputLogin')]    ${ID:ฝ่ายกำกับพนักงาน}
         Input Password    xpath=//input[contains(@class, 'inputLogin') and @type='password']    ${password:ฝ่ายกำกับพนักงาน}
         Click Element     //button[contains(@class, 'mat-raised-button')]
+        Run Keyword And Ignore Error    ยืนยันการเข้าระบบ
+        Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
 
-
-Userระดับฝ่ายกำกับหัวหน้างาน
+เข้าด้วยUserระดับฝ่ายกำกับหัวหน้างาน
         Wait Until Element Is Visible    xpath=//input[contains(@class, 'inputLogin')]    5s
         Input Text    xpath=//input[contains(@class, 'inputLogin')]    ${ID:ฝ่ายกำกับหัวหน้างาน}
         Input Password    xpath=//input[contains(@class, 'inputLogin') and @type='password']    ${password:ฝ่ายกำกับหัวหน้างาน}
         Click Element     //button[contains(@class, 'mat-raised-button')]
+        Run Keyword And Ignore Error    ยืนยันการเข้าระบบ
+        Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
 
+เข้าด้วยUserระดับหัวหน้าฝ่ายกำกับ
+        Wait Until Element Is Visible    xpath=//input[contains(@class, 'inputLogin')]    5s
+        Input Text    xpath=//input[contains(@class, 'inputLogin')]    ${ID:หัวหน้าฝ่ายกำกับ}
+        Input Password    xpath=//input[contains(@class, 'inputLogin') and @type='password']    ${password:หัวหน้าฝ่ายกำกับ}
+        Click Element     //button[contains(@class, 'mat-raised-button')]
+        Run Keyword And Ignore Error    ยืนยันการเข้าระบบ
+        Run Keyword And Ignore Error    ยืนยันการข้าม Pop-up
 ######################################################################
 
 ####################### การใช้งานหลัก #####################################
@@ -57,7 +66,7 @@ Userระดับฝ่ายกำกับหัวหน้างาน
         Click Element    xpath=//button[.//span[normalize-space(text())='Close']]
 
 ยืนยันการเข้าระบบ
-    
+         Wait Until Element Is Visible    //button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]
          Click Element    //button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]
 
 ออกจากระบบ

@@ -28,17 +28,27 @@ ${MAX}    9999999999999
     Set Suite Variable    ${CIF}    ${CIF}
     [Return]    ${CIF}
 
+######################## ใช้งานเลขบัตร #############################
 สุ่มเลขบัตร13หลัก
-     ${random_number}=    Evaluate    random.randint(${MIN}, ${MAX})    modules=random
-    Set Suite Variable     ${random_number}     ${random_number}
-    [Return]     ${random_number}
-
+    ${digits}=    Evaluate    [random.randint(0,9) for _ in range(12)]    modules=random
+    ${total}=     Evaluate    sum([x*(13-i) for i,x in enumerate(${digits})])
+    ${check}=     Evaluate    (11 - (${total} % 11)) % 10
+    ${digits}=    Evaluate    ${digits} + [${check}]
+    ${random_number}=    Evaluate    ''.join(str(x) for x in ${digits})
+    Set Suite Variable  ${random_number}   ${random_number}
+    [Return]    ${random_number}
 ใช้งานเลขบัตร
-        ${เลขที่บัตร}=   สุ่มเลขบัตร13หลัก
-        Set Suite Variable  ${เลขที่บัตร}   ${เลขที่บัตร}
-        [Return]   ${เลขที่บัตร}
-
-เรียกเลขบัตร
+        ${เลขประจำตัวประชาชน}=   สุ่มเลขบัตร13หลัก
+        Set Suite Variable  ${เลขประจำตัวประชาชน}   ${เลขประจำตัวประชาชน}
+        [Return]   ${เลขประจำตัวประชาชน}
+#####################################################
+เรียกเลขประจำตัวประชาชน
         สุ่มเลขบัตร13หลัก
         ใช้งานเลขบัตร
+สุ่มเลเซอร์โค้ด
+    ${letters}=    Evaluate    ''.join(random.choices(string.ascii_uppercase, k=2))    modules=random,string
+    ${numbers}=    Evaluate    ''.join(random.choices(string.digits, k=10))    modules=random,string
+    ${random_laser_code}=    Catenate    SEPARATOR=    ${letters}    ${numbers}
+    Set Suite Variable    ${random_laser_code}    ${random_laser_code}
+    [Return]    ${random_laser_code}
 
