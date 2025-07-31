@@ -1,0 +1,4 @@
+
+TC_CDD_Review_008 =   robot  -d .\Results\CDD_Results\CDD_Review\TC_CDD_Review_008_Results\   .\TestCase\CDD\CDD_Review\TC_CDD_Review_008.robot
+TC_CDD_Review_009 =   robot  -d .\Results\CDD_Results\CDD_Review\TC_CDD_Review_009_Results\   .\TestCase\CDD\CDD_Review\TC_CDD_Review_009.robot
+TC_CDD_Review_012 =   robot  -d .\Results\CDD_Results\CDD_Review\TC_CDD_Review_012_Results\   .\TestCase\CDD\CDD_Review\TC_CDD_Review_012.robot

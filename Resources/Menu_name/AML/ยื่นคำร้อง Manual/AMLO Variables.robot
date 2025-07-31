@@ -7,18 +7,19 @@ ${AML-ไทย}     xpath=//a[contains(@class, 'sidebar-link') and .//div[conta
 ${ยื่นคำร้องManual}   xpath=//a[contains(@class, 'mat-list-item') and contains(., 'ยื่นคำร้อง Manual')]
 ${อัพโหลด_xpath}    xpath=//input[@type='file']
 
-${View Alert รายงาน ปปง. 1-01, 1-02, 1-03, 1-05-9}      xpath=//a[contains(@class, 'mat-list-item') and contains(., '    View Alert รายงาน ปปง. 1-01, 1-02,1-03, 1-05-9 ')]
+${View Alert รายงาน ปปง. 1-01, 1-02, 1-03, 1-05-9}      //a[contains(normalize-space(), 'View Alert รายงาน ปปง. 1-01')]
 ${CIF_XPATH}    (//div[@fxflex='16' and contains(@class, 'contentDiv')]/mat-label)[3]
 ${MIN}    1000000000000
 ${MAX}    9999999999999
 
 *** Keywords ***
 เมนู AML ยื่นคำร้องManual
+        Wait Until Element Is Visible    ${AML-ไทย}
         Click Element    ${AML-ไทย}
         Click Element    ${ยื่นคำร้องManual}
 
 เลือกเมนูView Alert รายงาน ปปง. 1-01, 1-02, 1-03, 1-05-9
-
+        Wait Until Element Is Visible    ${View Alert รายงาน ปปง. 1-01, 1-02, 1-03, 1-05-9}
         Click Element    ${View Alert รายงาน ปปง. 1-01, 1-02, 1-03, 1-05-9}
 
 เก็บรหัสCIF

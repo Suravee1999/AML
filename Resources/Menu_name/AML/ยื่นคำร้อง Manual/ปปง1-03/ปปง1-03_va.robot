@@ -13,7 +13,7 @@ ${รายงานเนื่องจาก_อื่นๆ_ระบุ}   
 
 ${แหล่งที่มาของเหตุอันควรสงสัย_พบพฤติกรรม/รายการทำธุรกรรมของลูกค้าที่มีเหตุอันควรสงสัย}     (//mat-radio-button[@ng-reflect-value='01'])[2]
 ${แหล่งที่มาของเหตุอันควรสงสัย_ ได้รับหนังสือจากหน่วยงานทางการ เช่น ตช. หมายเรียกพยานเอกสาร }     //mat-radio-button[.//span[contains(text(), 'ได้รับหนังสือจากหน่วยงานทางการ เช่น ตช. หมายเรียกพยานเอกสาร')]]
-${แหล่งที่มาของเหตุอันควรสงสัย}     //mat-radio-button[.//span[contains(text(), 'ได้รับหนังสือจากหน่วยงานส่วนกลาง ให้ดำเนินการตามหนังสือหน่วยงานทางการ เช่น ป.ป.ส. ปปช.')]]
+${แหล่งที่มาของเหตุอันควรสงสัย}     (//mat-radio-button[@ng-reflect-value='03'])[1]
 
 
 ${ค้าหาข้อมูลจากลูกค้าด้วย_บัตรประจำตัว}    xpath=//mat-select[@aria-labelledby='mat-select-value-3']
@@ -190,8 +190,22 @@ ${ส่วนที่2_ถัดไป}      //button[contains(@class, 'mat-ra
 
 
 #*****************ส่วนที่ 3 *************************
-${ไม่พบความผิดปกติ}   //mat-radio-button[label//span[contains(text(), 'ไม่พบความผิดปกติ')]]
-${พบความผิดปกติ}   //mat-radio-button[label//span[contains(text(), 'พบความผิดปกติ')]]
+
+${วันที่ทำธุรกรรม_xpath}    //input[@name='transDate']
+${มูลค่าของธุรกรรม_xpath}     //input[@name='transAmount']
+${ประเภทธุรกรรม_xpath}     //mat-radio-button[.//span[contains(text(), '${ประเภทธุรกรรม}')]]
+${รายละเอียดของธุรกรรม_xpath}         //input[@name='transTypedesc']
+${เลขที่บัญชีที่ทำธุรกรรม_xpath}        //input[@name='accountNo']
+
+${ชื่อเจ้าของบัญชี_xpath}      //mat-radio-button[.//span[contains(text(), '${ชื่อเจ้าของบัญชี}')]]
+${คำนำหน้า_xpath}   //mat-select[@name='accountHolderPrefix']
+${3.คำนำหน้าชื่อ_เลือก}  //mat-option[@ng-reflect-value='${3.คำนำหน้า}']
+${3.ชื่อ_xpath}       //input[@name='accountHolderFirst']
+${3.นามสกุล_xpath}    //input[@name='accountHolderLast']
+${วัตถุประสงค์ของการทำธุรกรรม_xpath}  xpath=//mat-select[@name='objectiveType']
+${วัตถุประสงค์ของการทำธุรกรรม_เลือก}    //mat-option[.//span[contains(text(), '${วัตถุประสงค์ของการทำธุรกรรม}')]]
+${ไม่พบความผิดปกติ}   //mat-radio-button[@ng-reflect-value='N']
+${พบความผิดปกติ}   //mat-radio-button[@ng-reflect-value='Y']
 ${ขออนุมัติรายงานธุรกรรมที่มีเหตุอันควรสงสัย}    //mat-radio-button[label//span[contains(text(), 'ขออนุมัติรายงานธุรกรรมที่มีเหตุอันควรสงสัย')]]
 ${ขออนุมัติยกเลิกการรายงานธุรกรรมที่มีเหตุอันควรสงสัย}    //mat-radio-button[label//span[contains(text(), 'ขออนุมัติยกเลิกการรายงานธุรกรรมที่มีเหตุอันควรสงสัย')]]
 ${3.เหตุผลประกอบการพิจารณา}  //textarea[contains(@class, 'mat-input-element')]

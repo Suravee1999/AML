@@ -1,5 +1,5 @@
 *** Variables ***
-${URL:IBank}     https://dev.aml.ibank.co.th/
+${URL:IBank}     https://172.26.59.117/login
 ${Browser}  chrome
 
 

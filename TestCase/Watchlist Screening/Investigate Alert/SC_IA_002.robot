@@ -7,7 +7,7 @@ Resource    ../../../Resources/Menu_name/Watch List/Investigate Alert/Investigat
 Resource    ../../../Resources/Menu_name/Watch List/Investigate Alert/Investigate Key.robot
 Resource    ../../../Resources/Menu_name/Watch List/WatchList Variables.robot
 
-Documentation       ทดสอบการทำงาน
+Documentation       ทดสอบการทำงาน Investigate Alert  SC_IA_002
 
 *** Variables ***
 ${CIF No}     10000002
@@ -16,44 +16,50 @@ ${หมายเหตุหัวหน้า}      ทดสอบ
 
 *** Test Cases ***
 1.open web IBank & Login
-        [Documentation]   ทดสอบการทำรายงาน Watch List
+        [Documentation]   ทดสอบการแสดงหน้าเว็ปและการเข้าสู่ระบบ
         Enteropen web IBank & Login
         เข้าด้วยUserระดับฝ่ายกำกับพนักงาน
 
 2.เลือกMenu Investigate Alert
-
+        [Documentation]     เข้าหน้า Investigate Alert
         เข้าMenu Investigate Alert
 
 3.พนักงานฝ่ายกำกับตรวจสอบข้อมูล
-
+        [Documentation]     ค้นหาข้อมูลด้วยเลข CIF
         ค้นหาเลข CIF
         ตรวจสอบข้อมูลระดับฝ่ายกำกับพนักงาน
 4.ตรวจสอบว่าเป็นจริงและส่งอนุมัติ
-
+        [Documentation]     ตรวจสอบข้อมูลรายการ
         ตรวจสอบรายการว่า(ไม่)และระบุเหตุผล
         กดปุ่มยืนยันการตรวจสอบ
 5.ออกระบบเข้าใช้ Userฝ่ายกำกับหัวหน้างาน
+        [Documentation]     ตรวจสอบเข้ารหัส ฝ่ายกำกับหัวหน้างาน
         ออกจากระบบ
         เข้าด้วยUserระดับฝ่ายกำกับหัวหน้างาน
         เข้าMenu Investigate Alert กรณีระบบไม่รีเฟสค่าหน้าจอ
 ุ6.ไม่อนุมัติรายการ
+        [Documentation]     ค้นหาข้อมูลด้วยเลข CIF
         ค้นหาเลข CIF
         กดปุ่มApproveและเข้าหน้าข้อมูล
         ฝ่ายกำกับหัวหน้างานไม่อนุมัติข้อมุูลและระบุเหตุผล
 ึ7.ออกระบบเข้าใช้ Userฝ่ายกำกับพนักงาน
+        [Documentation]     ตรวจสอบเข้ารหัส พนักงาน
         ออกจากระบบ
         เข้าด้วยUserระดับฝ่ายกำกับพนักงาน
 8.ฝ่ายกำกับพนักงานแก้ไขส่งกลับ
+        [Documentation]     ตรวจสอบการแก้ไขข้อมูล
         เข้าMenu Investigate Alert กรณีระบบไม่รีเฟสค่าหน้าจอ
         ค้นหาเลข CIF
         ตรวจสอบข้อมูลระดับฝ่ายกำกับพนักงาน
         ตรวจสอบรายการว่า(ใช่)และระบุเหตุผล
         กดปุ่มยืนยันการตรวจสอบ
 9.ออกระบบเข้าใช้ Userฝ่ายกำกับหัวหน้างาน
+        [Documentation]     ตรวจสอบเข้ารหัส ผู้จัดการ
         ออกจากระบบ
         เข้าด้วยUserระดับฝ่ายกำกับหัวหน้างาน
         เข้าMenu Investigate Alert กรณีระบบไม่รีเฟสค่าหน้าจอ
 ุ10.ไม่อนุมัติรายการ
+        [Documentation]     ตรวจสอบการ Approve ข้อมูล
         ค้นหาเลข CIF
         กดปุ่มApproveและเข้าหน้าข้อมูล
 #        ฝ่ายกำกับหัวหน้างานอนุมัติข้อมุูล

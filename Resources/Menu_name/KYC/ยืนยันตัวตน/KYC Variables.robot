@@ -6,7 +6,7 @@ Library    String
 ${KYC-ไทย}     xpath=//a[contains(@class, 'sidebar-link') and .//div[contains(text(), 'KYC')]]
 ${ยืนยันตัวตน}   xpath=//a[contains(@class, 'mat-list-item') and contains(., 'ยืนยันตัวตน')]
 ${รายงานผลยืนยันตัวตน}   xpath=//a[contains(@class, 'mat-list-item') and contains(., 'รายงานผลยืนยันตัวตน')]
-
+${ค้นหาข้อมูล KYC}      xpath=//a[contains(@class, 'mat-list-item') and contains(., 'ค้นหาข้อมูล KYC')]
 *** Keywords ***
 ######################## ใช้งานเลขบัตร #############################
 สุ่มเลขบัตร13หลัก
@@ -31,6 +31,8 @@ ${รายงานผลยืนยันตัวตน}   xpath=//a[contain
     ${random_laser_code}=    Catenate    SEPARATOR=    ${letters}    ${numbers}
     Set Suite Variable    ${random_laser_code}    ${random_laser_code}
     [Return]    ${random_laser_code}
+
+
 
 
 

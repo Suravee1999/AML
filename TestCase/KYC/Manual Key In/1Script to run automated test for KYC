@@ -5,10 +5,4 @@ TC_KYC_004 = robot -d .\Results\KYC_Results\Manual\TC_KYC_004\     '.\TestCase\K
 TC_KYC_005 = robot -d .\Results\KYC_Results\Manual\TC_KYC_005\     '.\TestCase\KYC\Manual Key In\TC_KYC_005.robot'
 TC_KYC_006 = robot -d .\Results\KYC_Results\Manual\TC_KYC_006\     '.\TestCase\KYC\Manual Key In\TC_KYC_006.robot'
 TC_KYC_007 = robot -d .\Results\KYC_Results\Manual\TC_KYC_007\     '.\TestCase\KYC\Manual Key In\TC_KYC_007.robot'
-TC_KYC_008 = robot -d .\Results\KYC_Results\Manual\TC_KYC_008\     '.\TestCase\KYC\Manual Key In\TC_KYC_008.robot'
-TC_KYC_009 = robot -d .\Results\KYC_Results\Manual\TC_KYC_009\     '.\TestCase\KYC\Manual Key In\TC_KYC_009.robot'
-TC_KYC_010 = robot -d .\Results\KYC_Results\Manual\TC_KYC_010\     '.\TestCase\KYC\Manual Key In\TC_KYC_010.robot'
-TC_KYC_011 = robot -d .\Results\KYC_Results\Manual\TC_KYC_011\     '.\TestCase\KYC\Manual Key In\TC_KYC_011.robot'
-TC_KYC_012 = robot -d .\Results\KYC_Results\Manual\TC_KYC_012\     '.\TestCase\KYC\Manual Key In\TC_KYC_012.robot'
-TC_KYC_013 = robot -d .\Results\KYC_Results\Manual\TC_KYC_013\     '.\TestCase\KYC\Manual Key In\TC_KYC_013.robot'
-TC_KYC_014 = robot -d .\Results\KYC_Results\Manual\TC_KYC_014\     '.\TestCase\KYC\Manual Key In\TC_KYC_014.robot'
+

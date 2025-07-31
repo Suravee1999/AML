@@ -1,0 +1,7 @@
+SC_WL_001 =   robot -d  .\Results\WL_Results\InvestigateAlert_Results\SC_IA_001\   '.\TestCase\Watchlist Screening\Investigate Alert\SC_IA_001.robot'
+SC_WL_002 =   robot -d  .\Results\WL_Results\InvestigateAlert_Results\SC_IA_002\   '.\TestCase\Watchlist Screening\Investigate Alert\SC_IA_002.robot'
+SC_WL_003 =   robot -d  .\Results\WL_Results\InvestigateAlert_Results\SC_IA_003\   '.\TestCase\Watchlist Screening\Investigate Alert\SC_IA_003.robot'
+SC_WL_004 =   robot -d  .\Results\WL_Results\InvestigateAlert_Results\SC_IA_004\   '.\TestCase\Watchlist Screening\Investigate Alert\SC_IA_004.robot'
+
+
+

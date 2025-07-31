@@ -6,8 +6,11 @@ Resource    ../../../Resources/main_keywords.robot
 Resource    ../../../Resources/Menu_name/KYC/ยืนยันตัวตน/Manual Key In/Manual Key In Variables.robot
 Resource    ../../../Resources/Menu_name/KYC/ยืนยันตัวตน/Manual Key In/ManualKeyIn Keywords.robot
 Resource    ../../../Resources/Menu_name/KYC/ยืนยันตัวตน/KYC Variables.robot
+Resource     ../../../Resources/Menu_name/KYC/ค้นหาข้อมูล KYC/ค้นหาข้อมูล_variables.robot
+Resource     ../../../Resources//Menu_name/KYC/ค้นหาข้อมูล KYC/ค้นหาข้อมูล KYC_keywords.robot
+Resource     ../../../Resources//Menu_name/KYC/ค้นหาข้อมูล KYC/ค้นหาข้อมูล_variables.robot
 
-
+Documentation    ทดสอบการทำงาน KYC  TC_KYC_001
 *** Variables ***
 
 ${คำนำหน้าTH}   นาย     #นาย , นาง , นางสาว
@@ -61,7 +64,6 @@ ${ู้จัดการสาขา_ระบุเหตุผล}      test
         เข้าหน้าจอKYC เลือกระบบ Manual Key in
 
 3.ระบุข้อมูลส่วนของManual Key in
-
         ระบุเลขที่บัตรประจำตัวประชาชนและlaserCode
         ระบุข้อมูล Manual Key in TH
         ระบุข้อมูล Manual Key in EN
@@ -74,12 +76,16 @@ ${ู้จัดการสาขา_ระบุเหตุผล}      test
         ข้อมูลประเภท บุคคลธรรมดา&ลูกค้าธนาคาร
         วัตถุประสงค์การดำเนินการเปิดบัญชีใหม่/เปลี่ยนแปลงข้อมูล
         กดส่วนเพิ่มเติม
-        ระบุข้อมูลส่วนของเพิ่มเติมตรวจหาWatchlist
+        ระบุข้อมูลส่วนของเพิ่มเติมตรวจหาความเสี่ยงและ Watchlistบุคคลธรรมดา
         กดปุ่มตรวจสอบและบันทึก
 5.ยืนยันการอนุมัติ KYC
         ยืนยันสถานะ KYC อนุมัติ KYC (Approve)
         กดปุ่มรอตรวจสอบ
-
-
+6.ออกจากระบบเข้า User ผู้จัดการ
+        ออกจากระบบ
+        เข้าด้วยUserระดับหัวหน้างาน
+        เข้าหน้าค้นหาข้อมูล KYC
+        ค้นหาเลขเลขประจำตัว
+        เข้าดูข้อมูล
 จบการทำงาน
         จบการทำงาน

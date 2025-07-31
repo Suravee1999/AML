@@ -1,223 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.8.7 on win32)" generated="2025-06-18T18:15:38.928852" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.8.7 on win32)" generated="2025-07-25T13:37:27.617623" rpa="false" schemaversion="5">
 <suite id="s1" name="SC WL 008" source="D:\AML_Project\TestCase\Watchlist Screening\Watchlist\SC_WL_008.robot">
 <test id="s1-t1" name="1.open web IBank &amp; Login" line="19">
 <kw name="Enteropen web IBank &amp; Login" owner="main_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:15:39.237141" level="INFO">Opening browser 'chrome' to base url 'https://uat.aml.ibank.co.th/'.</msg>
-<msg time="2025-06-18T18:15:40.412559" level="WARN">The chromedriver version (136.0.7103.94) detected in PATH at C:\Users\suravesi\AppData\Local\Programs\Python\Python38\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.104); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-07-25T13:37:28.587038" level="INFO">Opening browser 'chrome' to base url 'https://dev.aml.ibank.co.th/'.</msg>
 <arg>${URL:IBank}</arg>
 <arg>${Browser}</arg>
 <arg>options=add_argument("--ignore-certificate-errors")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-18T18:15:39.237141" elapsed="4.180248"/>
+<status status="PASS" start="2025-07-25T13:37:28.586038" elapsed="7.649027"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-06-18T18:15:43.418392" elapsed="0.029618"/>
+<status status="PASS" start="2025-07-25T13:37:36.236025" elapsed="0.052841"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>0.5s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-06-18T18:15:43.449022" elapsed="0.001001"/>
+<status status="PASS" start="2025-07-25T13:37:36.289858" elapsed="0.000000"/>
 </kw>
+<status status="PASS" start="2025-07-25T13:37:28.584037" elapsed="7.705821"/>
+</kw>
+<kw name="เข้าด้วยUserระดับฝ่ายกำกับพนักงาน" owner="main_keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[contains(@class, 'inputLogin')]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-06-18T18:15:43.450023" elapsed="1.107915"/>
+<status status="PASS" start="2025-07-25T13:37:36.293379" elapsed="1.808099"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:15:44.557938" level="INFO">Typing text '630051' into text field 'xpath=//input[contains(@class, 'inputLogin')]'.</msg>
+<msg time="2025-07-25T13:37:38.103199" level="INFO">Typing text '530433' into text field 'xpath=//input[contains(@class, 'inputLogin')]'.</msg>
 <arg>xpath=//input[contains(@class, 'inputLogin')]</arg>
-<arg>${ID:พนักงาน}</arg>
+<arg>${ID:ฝ่ายกำกับพนักงาน}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:15:44.557938" elapsed="1.592127"/>
+<status status="PASS" start="2025-07-25T13:37:38.102199" elapsed="1.774414"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:15:46.150065" level="INFO">Typing password into text field 'xpath=//input[contains(@class, 'inputLogin') and @type='password']'.</msg>
-<msg time="2025-06-18T18:15:47.182277" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-07-25T13:37:39.878608" level="INFO">Typing password into text field 'xpath=//input[contains(@class, 'inputLogin') and @type='password']'.</msg>
+<msg time="2025-07-25T13:37:40.950382" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>xpath=//input[contains(@class, 'inputLogin') and @type='password']</arg>
-<arg>${password:พนักงาน}</arg>
+<arg>${password:ฝ่ายกำกับพนักงาน}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:15:46.150065" elapsed="1.577323"/>
+<status status="PASS" start="2025-07-25T13:37:39.877606" elapsed="1.697540"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:15:47.727388" level="INFO">Clicking element '//button[contains(@class, 'mat-raised-button')]'.</msg>
+<msg time="2025-07-25T13:37:41.577139" level="INFO">Clicking element '//button[contains(@class, 'mat-raised-button')]'.</msg>
 <arg>//button[contains(@class, 'mat-raised-button')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:15:47.727388" elapsed="1.054299"/>
-</kw>
-<status status="PASS" start="2025-06-18T18:15:39.237141" elapsed="9.545605"/>
+<status status="PASS" start="2025-07-25T13:37:41.576146" elapsed="1.147491"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="ยืนยันการเข้าระบบ" owner="main_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-25T13:37:42.727637" elapsed="1.134994"/>
+</kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:15:48.783826" level="INFO">Clicking element '//button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]'.</msg>
+<msg time="2025-07-25T13:37:43.864626" level="INFO">Clicking element '//button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]'.</msg>
 <arg>//button[contains(@class, 'mat-raised-button')]//i[contains(@class, 'fa-check')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:15:48.783826" elapsed="1.080626"/>
+<status status="PASS" start="2025-07-25T13:37:43.863627" elapsed="1.098464"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:15:48.783826" elapsed="1.080626"/>
+<status status="PASS" start="2025-07-25T13:37:42.725638" elapsed="2.237452"/>
 </kw>
 <arg>ยืนยันการเข้าระบบ</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-06-18T18:15:48.782746" elapsed="1.081706"/>
+<status status="PASS" start="2025-07-25T13:37:42.724636" elapsed="2.240460"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="ยืนยันการข้าม Pop-up" owner="main_keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:15:55.502987" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-06-18T18:15:55.502987" level="FAIL">Element 'xpath=//button[.//span[normalize-space(text())='Close']]' not visible after 5 seconds.</msg>
+<msg time="2025-07-25T13:37:50.820091" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-25T13:37:50.821663" level="FAIL">Element 'xpath=//button[.//span[normalize-space(text())='Close']]' not visible after 5 seconds.</msg>
 <arg>xpath=//button[.//span[normalize-space(text())='Close']]</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-06-18T18:15:49.865960" elapsed="5.652710">Element 'xpath=//button[.//span[normalize-space(text())='Close']]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-07-25T13:37:44.968092" elapsed="5.864084">Element 'xpath=//button[.//span[normalize-space(text())='Close']]' not visible after 5 seconds.</status>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>xpath=//button[.//span[normalize-space(text())='Close']]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-06-18T18:15:55.518670" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-07-25T13:37:50.833170" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2025-06-18T18:15:49.865960" elapsed="5.652710">Element 'xpath=//button[.//span[normalize-space(text())='Close']]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-07-25T13:37:44.967100" elapsed="5.866070">Element 'xpath=//button[.//span[normalize-space(text())='Close']]' not visible after 5 seconds.</status>
 </kw>
 <arg>ยืนยันการข้าม Pop-up</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-06-18T18:15:49.864452" elapsed="5.654218"/>
+<status status="PASS" start="2025-07-25T13:37:44.966091" elapsed="5.867079"/>
 </kw>
-<doc>ทดสอบการทำรายงาน Watch List</doc>
-<status status="PASS" start="2025-06-18T18:15:39.237141" elapsed="16.281529"/>
+<status status="PASS" start="2025-07-25T13:37:36.292379" elapsed="14.541789"/>
+</kw>
+<doc>ทดสอบการแสดงหน้าเว็ปและการเข้าสู่ระบบ</doc>
+<status status="PASS" start="2025-07-25T13:37:28.581503" elapsed="22.253666"/>
 </test>
 <test id="s1-t2" name="2.เลือกMenu Watch List" line="24">
 <kw name="เข้าMenu Watch List" owner="WatchList Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:15:55.518670" level="INFO">Clicking element 'xpath=//a[contains(@class, 'sidebar-link') and .//div[contains(text(), 'Watch List')]]'.</msg>
+<msg time="2025-07-25T13:37:50.842037" level="INFO">Clicking element 'xpath=//a[contains(@class, 'sidebar-link') and .//div[contains(text(), 'Watch List')]]'.</msg>
 <arg>${Watch List_menuXPATH}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:15:55.518670" elapsed="1.082968"/>
+<status status="PASS" start="2025-07-25T13:37:50.841520" elapsed="1.195094"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:15:56.601638" level="INFO">Clicking element 'xpath=//a[contains(@class, 'mat-list-item') and contains(., 'Watch List')]'.</msg>
+<msg time="2025-07-25T13:37:52.038616" level="INFO">Clicking element 'xpath=//a[contains(@class, 'mat-list-item') and contains(., 'Watch List')]'.</msg>
 <arg>${Watch List}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:15:56.601638" elapsed="1.059798"/>
+<status status="PASS" start="2025-07-25T13:37:52.037622" elapsed="1.184882"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:15:55.518670" elapsed="2.142766"/>
+<status status="PASS" start="2025-07-25T13:37:50.839523" elapsed="2.383985"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-18T18:16:00.667184" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-07-25T13:37:56.232815" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-18T18:15:57.662441" elapsed="3.004743"/>
+<status status="PASS" start="2025-07-25T13:37:53.225515" elapsed="3.007300"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:15:55.518670" elapsed="5.149459"/>
+<doc>เข้าหน้า Watchlist</doc>
+<status status="PASS" start="2025-07-25T13:37:50.837525" elapsed="5.397307"/>
 </test>
 <test id="s1-t3" name="3ระบุข้อมูล" line="28">
 <kw name="ค้นหาข้อมูลกรุณาเลือกประเภทในการค้นหา-นิติบุคคุล" owner="WatchList Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:16:00.668129" level="INFO">Clicking element '//mat-radio-button[.//span[normalize-space(text())='นิติบุคคล']]'.</msg>
+<msg time="2025-07-25T13:37:56.242329" level="INFO">Clicking element '//mat-radio-button[.//span[normalize-space(text())='นิติบุคคล']]'.</msg>
 <arg>${กรุณาเลือกประเภทในการค้นหา_นิติบุคคล}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:16:00.668129" elapsed="1.097787"/>
+<status status="PASS" start="2025-07-25T13:37:56.241318" elapsed="1.242667"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:16:00.668129" elapsed="1.098601"/>
+<status status="PASS" start="2025-07-25T13:37:56.239809" elapsed="1.245184"/>
 </kw>
 <kw name="ความแม่นยำในการค้นหา 90%" owner="WatchList Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:16:01.766730" level="INFO">Clicking element '//mat-radio-button[.//span[contains(text(), '90%')]]'.</msg>
+<msg time="2025-07-25T13:37:57.488989" level="INFO">Clicking element '//mat-radio-button[.//span[contains(text(), '90%')]]'.</msg>
 <arg>${% ความแม่นยำในการค้นหา_90}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:16:01.766730" elapsed="1.076430"/>
+<status status="PASS" start="2025-07-25T13:37:57.487986" elapsed="1.195879"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:16:01.766730" elapsed="1.076430"/>
+<status status="PASS" start="2025-07-25T13:37:57.486989" elapsed="1.197879"/>
 </kw>
 <kw name="ตรวจสอบด้วยชื่อนิติบุคคลไทย" owner="WatchList Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:16:02.843160" level="INFO">Clicking element '//mat-radio-button//label[.//span[contains(text(), 'ตรวจสอบด้วย ชื่อภาษาไทย')]]'.</msg>
+<msg time="2025-07-25T13:37:58.687866" level="INFO">Clicking element '//mat-radio-button//label[.//span[contains(text(), 'ตรวจสอบด้วย ชื่อภาษาไทย')]]'.</msg>
 <arg>${ตรวจสอบด้วย ชื่อภาษาไทย_xpath}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:16:02.843160" elapsed="1.080341"/>
+<status status="PASS" start="2025-07-25T13:37:58.687866" elapsed="1.174240"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:16:03.923501" level="INFO">Typing text 'มั่งมี จำกัด' into text field '//input[@name='nameThai']'.</msg>
+<msg time="2025-07-25T13:37:59.864128" level="INFO">Typing text 'มั่งมี จำกัด' into text field '//input[@name='nameThai']'.</msg>
 <arg>${ตรวจสอบด้วย ชื่อภาษาไทย ชื่อนิติบุคคล_xpath}</arg>
 <arg>${ตรวจสอบด้วย ชื่อภาษาไทย ชื่อนิติบุคคล}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:16:03.923501" elapsed="1.620875"/>
+<status status="PASS" start="2025-07-25T13:37:59.863112" elapsed="1.759501"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:16:02.843160" elapsed="2.701216"/>
-</kw>
-<kw name="ข้อมูลเพิ่มเติมในการค้นหาประเทศ(นิติ)" owner="WatchList Keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:16:05.545316" level="INFO">Clicking element '//mat-select[@name='countries']'.</msg>
-<arg>${ประเทศนิติ_xpath}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:16:05.545316" elapsed="1.075278"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:16:06.621361" level="INFO">Clicking element 'xpath=//mat-option[.//span[contains(text(),'ไทย')]]'.</msg>
-<arg>${ประเทศ_เลือก_xpath}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:16:06.621361" elapsed="1.080133"/>
-</kw>
-<status status="PASS" start="2025-06-18T18:16:05.545316" elapsed="2.156178"/>
+<status status="PASS" start="2025-07-25T13:37:58.686870" elapsed="2.937066"/>
 </kw>
 <kw name="ข้อมูลเพิ่มเติมในการค้นหาวันที่จดทะเบียน" owner="WatchList Keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:16:07.701494" level="INFO">Typing text '10/12/2009' into text field '//input[@name='issuedate']'.</msg>
+<msg time="2025-07-25T13:38:01.628953" level="INFO">Typing text '10/12/2552' into text field '//input[@name='hdate']'.</msg>
 <arg>${วันที่จดทะเบียน_xpath}</arg>
 <arg>${วันที่จดทะเบียน}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:16:07.701494" elapsed="1.603408"/>
+<status status="PASS" start="2025-07-25T13:38:01.627950" elapsed="1.801406"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:16:07.701494" elapsed="1.603408"/>
+<status status="PASS" start="2025-07-25T13:38:01.625955" elapsed="1.804407"/>
 </kw>
 <kw name="กดปุ่มตรวจสอบ" owner="WatchList Keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:16:09.304902" level="INFO">Clicking element '//button[.//span[contains(text(),'ตรวจสอบ')]]'.</msg>
+<msg time="2025-07-25T13:38:03.434926" level="INFO">Clicking element '//button[.//span[contains(text(),'ตรวจสอบ')]]'.</msg>
 <arg>${ปุ่มตรวจสอบ}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-18T18:16:09.304902" elapsed="1.085787"/>
+<status status="PASS" start="2025-07-25T13:38:03.433926" elapsed="1.123589"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:16:09.304902" elapsed="1.086800"/>
+<status status="PASS" start="2025-07-25T13:38:03.432907" elapsed="1.124608"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-18T18:16:15.395420" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-18T18:16:10.392726" elapsed="5.002694"/>
-</kw>
-<status status="PASS" start="2025-06-18T18:16:00.668129" elapsed="14.728290"/>
+<doc>ตรวจสอบข้อมูลWatchlist ด้วยชื่อภาษาไทย</doc>
+<status status="PASS" start="2025-07-25T13:37:56.236808" elapsed="8.321709"/>
 </test>
 <test id="s1-t4" name="จบการทำงาน" line="37">
 <kw name="จบการทำงาน" owner="main_keywords">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-18T18:16:20.400205" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-07-25T13:38:09.575404" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-18T18:16:15.399492" elapsed="5.000713"/>
+<status status="PASS" start="2025-07-25T13:38:04.562039" elapsed="5.013365"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-06-18T18:16:21.040671" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-25T13:38:10.360429" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-06-18T18:16:20.401332" elapsed="0.639339"/>
+<status status="PASS" start="2025-07-25T13:38:09.576402" elapsed="0.784027"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-18T18:16:21.040671" level="INFO">Test Teardown Completed</msg>
+<msg time="2025-07-25T13:38:10.361943" level="INFO">Test Teardown Completed</msg>
 <arg>Test Teardown Completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-18T18:16:21.040671" elapsed="0.000000"/>
+<status status="PASS" start="2025-07-25T13:38:10.361429" elapsed="0.000514"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-18T18:16:21.040671" elapsed="3.264749"/>
+<status status="PASS" start="2025-07-25T13:38:10.361943" elapsed="3.947365"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:16:15.398497" elapsed="8.906923"/>
+<status status="PASS" start="2025-07-25T13:38:04.562039" elapsed="9.748489"/>
 </kw>
-<status status="PASS" start="2025-06-18T18:16:15.397417" elapsed="8.908003"/>
+<status status="PASS" start="2025-07-25T13:38:04.560520" elapsed="9.751021"/>
 </test>
-<doc>ทดสอบการทำงาน Watch List SC_WL_001</doc>
-<status status="PASS" start="2025-06-18T18:15:38.936866" elapsed="45.368554"/>
+<doc>ทดสอบการทำงาน Watch List SC_WL_008</doc>
+<status status="PASS" start="2025-07-25T13:37:27.641292" elapsed="46.673277"/>
 </suite>
 <statistics>
 <total>
@@ -230,6 +218,5 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-06-18T18:15:40.412559" level="WARN">The chromedriver version (136.0.7103.94) detected in PATH at C:\Users\suravesi\AppData\Local\Programs\Python\Python38\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.104); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

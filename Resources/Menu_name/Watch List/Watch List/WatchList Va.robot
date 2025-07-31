@@ -30,8 +30,8 @@ ${ประเทศ_xpath}   //mat-select[@name='nationality']
 ${ประเทศนิติ_xpath}     //mat-select[@name='countries']
 
 ${ประเทศ_เลือก_xpath}    xpath=//mat-option[.//span[contains(text(),'${ประเทศ_เลือก}')]]
-${วันเกิด_xpath}     //input[@name='birthday']
-${วันที่จดทะเบียน_xpath}  //input[@name='issuedate']
+${วันเกิด_xpath}     //input[@name='hdate']
+${วันที่จดทะเบียน_xpath}  //input[@name='hdate']
 ${ปุ่มตรวจสอบ}      //button[.//span[contains(text(),'ตรวจสอบ')]]
 ${ปุ่มล้างข้อมูล_xpath}      //button[.//span[contains(text(),'ล้างข้อมูล')]]
 

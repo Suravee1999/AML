@@ -1,0 +1,13 @@
+
+TC_CDD_Review_001 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_001_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_001.robot
+TC_CDD_Review_002 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_002_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_002.robot
+TC_CDD_Review_003 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_003_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_003.robot
+TC_CDD_Review_004 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_004_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_004.robot
+TC_CDD_Review_005 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_005_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_005.robot
+TC_CDD_Review_006 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_006_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_006.robot
+TC_CDD_Review_007 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_007_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_007.robot
+TC_CDD_Review_008 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_008_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_008.robot
+TC_CDD_Review_009 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_009_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_009.robot
+TC_CDD_Review_010 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_010_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_010.robot
+TC_CDD_Review_011 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_011_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_011.robot
+TC_CDD_Review_012 =   robot  -d .\Results\CDD_Results\CDD_Search\TC_CDD_Search_012_Results\   .\TestCase\CDD\CDD_Search\TC_CDD_Search_012.robot

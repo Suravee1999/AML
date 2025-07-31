@@ -96,7 +96,7 @@ ${1.5_เมื่อ}
 ${1.5_วันหมดอายุ}
 
 ${ส่วนที่1_บีนทึก}    xpath=//button[.//span[contains(text(), 'บันทึก')]]
-${ส่วนที่1_ตกลง}    //button[.//span[contains(text(), 'ตกลง')]]
+${ส่วนที่1_ตกลง}    //button[.//span[normalize-space()='ตกลง']]
 ${ส่วนที่1_ถัดไป}      //button[contains(@class, 'mat-raised-button') and .//span[contains(text(), 'ถัดไป')]]
 
 

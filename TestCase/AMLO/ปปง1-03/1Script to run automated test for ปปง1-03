@@ -10,6 +10,4 @@ TC_1-03_009 =  robot -d .\Results\AMLO_Results\ปปง1-03_Results\TC_1-03_009
 TC_1-03_010 =  robot -d .\Results\AMLO_Results\ปปง1-03_Results\TC_1-03_010_Results\   '.\TestCase\AMLO\ปปง1-03\TC_1-03_010.robot'
 TC_1-03_011 =  robot -d .\Results\AMLO_Results\ปปง1-03_Results\TC_1-03_011_Results\   '.\TestCase\AMLO\ปปง1-03\TC_1-03_011.robot'
 TC_1-03_012 =  robot -d .\Results\AMLO_Results\ปปง1-03_Results\TC_1-03_012_Results\   '.\TestCase\AMLO\ปปง1-03\TC_1-03_012.robot'
-TC_1-03_013 =  robot -d .\Results\AMLO_Results\ปปง1-03_Results\TC_1-03_013_Results\   '.\TestCase\AMLO\ปปง1-03\TC_1-03_013.robot'
-TC_1-03_014 =  robot -d .\Results\AMLO_Results\ปปง1-03_Results\TC_1-03_014_Results\   '.\TestCase\AMLO\ปปง1-03\TC_1-03_014.robot'
-TC_1-03_015 =  robot -d .\Results\AMLO_Results\ปปง1-03_Results\TC_1-03_015_Results\   '.\TestCase\AMLO\ปปง1-03\TC_1-03_015.robot'
+

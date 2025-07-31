@@ -1,0 +1,6 @@
+EDD_MX_001 =  robot  -d .\Results\EDD_Results\EDD_MX_001_Results\   .\TestCase\EDD\EDD_MX_001.robot
+EDD_MX_010 =  robot  -d .\Results\EDD_Results\EDD_MX_010_Results\   .\TestCase\EDD\EDD_MX_010.robot
+EDD_MX_011 =  robot  -d .\Results\EDD_Results\EDD_MX_011_Results\   .\TestCase\EDD\EDD_MX_011.robot
+EDD_MX_012 =  robot  -d .\Results\EDD_Results\EDD_MX_012_Results\   .\TestCase\EDD\EDD_MX_012.robot
+EDD_MX_013 =  robot  -d .\Results\EDD_Results\EDD_MX_013_Results\   .\TestCase\EDD\EDD_MX_013.robot
+EDD_MX_014 =  robot  -d .\Results\EDD_Results\EDD_MX_014_Results\   .\TestCase\EDD\EDD_MX_014.robot

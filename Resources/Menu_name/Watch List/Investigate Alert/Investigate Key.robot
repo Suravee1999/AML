@@ -26,8 +26,10 @@ Investigate
 ##########################
 
 ค้นหาเลข CIF
+        Wait Until Element Is Visible    ${CIFNO_xpath}
         Input Text    ${CIFNO_xpath}    ${CIF No}
         Click Element    ${ปุ่มค้นหา}
+        Capture Page Screenshot
 
 
 ตรวจสอบข้อมูลระดับฝ่ายกำกับพนักงาน
@@ -39,15 +41,18 @@ Investigate
         Wait Until Element Is Visible   ${ปุ่มใช่_xpath}
         Click Element  ${ปุ่มใช่_xpath}
         Input Text    ${หมายเหตุ_xpath}    ${หมายเหตุ}
+        Capture Page Screenshot
 
 ตรวจสอบรายการว่า(ไม่)และระบุเหตุผล
         Wait Until Element Is Visible   ${ปุ่มไม่_xpath}
         Click Element  ${ปุ่มไม่_xpath}
         Input Text    ${หมายเหตุ_xpath}    ${หมายเหตุ}
-
+        Capture Page Screenshot
 กดปุ่มยืนยันการตรวจสอบ
+        Wait Until Element Is Visible    ${ปุ่มยืนยันการตรวจสอบ_xpath}
         Click Element    ${ปุ่มยืนยันการตรวจสอบ_xpath}
         Click Element    ${ปุ่มยืนยัน_xpath}
+        Capture Page Screenshot
         Run Keyword And Ignore Error    กดปุ่มตกลง
         
 
@@ -58,11 +63,13 @@ Investigate
 ฝ่ายกำกับหัวหน้างานอนุมัติข้อมุูล
       Click Element    ${ปุ่มอนุมัติ_xpath}
       Click Element    ${ปุ่มยืนยัน_xpath}
+      Capture Page Screenshot
       Run Keyword And Ignore Error    กดปุ่มตกลง
 
 ฝ่ายกำกับหัวหน้างานไม่อนุมัติข้อมุูลและระบุเหตุผล
      Input Text    ${หมายเหตุหัวหน้า_xpath}    ${หมายเหตุหัวหน้า}
      Click Element    ${ปุ่มไม่อนุมัติ_xpath}
      Click Element    ${ปุ่มยืนยัน_xpath}
+     Capture Page Screenshot
      Run Keyword And Ignore Error    กดปุ่มตกลง
 

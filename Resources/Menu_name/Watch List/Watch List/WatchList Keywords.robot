@@ -68,5 +68,6 @@ Resource    ../WatchList Variables.robot
         Click Element    ${ปุ่มตรวจสอบ}   
         
 กดปุ่มล้างข้อมูล
+        Sleep    4s
         Capture Page Screenshot
         Click Element    ${ปุ่มล้างข้อมูล_xpath}             

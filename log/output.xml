@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.8.7 on win32)" generated="2025-07-11T14:44:45.714334" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 1-02 003" source="D:\AML_Project\TestCase\AMLO\ปปง1-02\TC_1-02_003.robot">
+<test id="s1-t1" name="1.open web IBank &amp; Login" line="55">
+<kw name="Enteropen web IBank &amp; Login" owner="main_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-11T14:44:46.219452" level="INFO">Opening browser 'chrome' to base url 'https://dev.aml.ibank.co.th/'.</msg>
+<arg>${URL:IBank}</arg>
+<arg>${Browser}</arg>
+<arg>options=add_argument("--ignore-certificate-errors")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-11T14:44:46.203825" elapsed="4.575113"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2025-07-11T14:44:50.783941" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c6d76f95+76917]
+	GetHandleVerifier [0x0x7ff7c6d76ff0+77008]
+	(No symbol) [0x0x7ff7c6b29dea]
+	(No symbol) [0x0x7ff7c6b02191]
+	(No symbol) [0x0x7ff7c6baf83e]
+	(No symbol) [0x0x7ff7c6bcff72]
+	(No symbol) [0x0x7ff7c6ba8243]
+	(No symbol) [0x0x7ff7c6b71431]
+	(No symbol) [0x0x7ff7c6b721c3]
+	GetHandleVerifier [0x0x7ff7c704d2cd+3051437]
+	GetHandleVerifier [0x0x7ff7c7047923+3028483]
+	GetHandleVerifier [0x0x7ff7c70658bd+3151261]
+	GetHandleVerifier [0x0x7ff7c6d9185e+185662]
+	GetHandleVerifier [0x0x7ff7c6d9971f+218111]
+	GetHandleVerifier [0x0x7ff7c6d7fb14+112628]
+	GetHandleVerifier [0x0x7ff7c6d7fcc9+113065]
+	GetHandleVerifier [0x0x7ff7c6d66c98+10616]
+	BaseThreadInitThunk [0x0x7ffdbc97259d+29]
+	RtlUserThreadStart [0x0x7ffdbdb4af78+40]
+</msg>
+<msg time="2025-07-11T14:44:50.783941" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c6d76f95+76917]
+	GetHandleVerifier [0x0x7ff7c6d76ff0+77008]
+	(No symbol) [0x0x7ff7c6b29dea]
+	(No symbol) [0x0x7ff7c6b02191]
+	(No symbol) [0x0x7ff7c6baf83e]
+	(No symbol) [0x0x7ff7c6bcff72]
+	(No symbol) [0x0x7ff7c6ba8243]
+	(No symbol) [0x0x7ff7c6b71431]
+	(No symbol) [0x0x7ff7c6b721c3]
+	GetHandleVerifier [0x0x7ff7c704d2cd+3051437]
+	GetHandleVerifier [0x0x7ff7c7047923+3028483]
+	GetHandleVerifier [0x0x7ff7c70658bd+3151261]
+	GetHandleVerifier [0x0x7ff7c6d9185e+185662]
+	GetHandleVerifier [0x0x7ff7c6d9971f+218111]
+	GetHandleVerifier [0x0x7ff7c6d7fb14+112628]
+	GetHandleVerifier [0x0x7ff7c6d7fcc9+113065]
+	GetHandleVerifier [0x0x7ff7c6d66c98+10616]
+	BaseThreadInitThunk [0x0x7ffdbc97259d+29]
+	RtlUserThreadStart [0x0x7ffdbdb4af78+40]
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2025-07-11T14:44:50.779938" elapsed="0.021744">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c6d76f95+76917]
+	GetHandleVerifier [0x0x7ff7c6d76ff0+77008]
+	(No symbol) [0x0x7ff7c6b29dea]
+	(No symbol) [0x0x7ff7c6b02191]
+	(No symbol) [0x0x7ff7c6baf83e]
+	(No symbol) [0x0x7ff7c6bcff72]
+	(No symbol) [0x0x7ff7c6ba8243]
+	(No symbol) [0x0x7ff7c6b71431]
+	(No symbol) [0x0x7ff7c6b721c3]
+	GetHandleVerifier [0x0x7ff7c704d2cd+3051437]
+	GetHandleVerifier [0x0x7ff7c7047923+3028483]
+	GetHandleVerifier [0x0x7ff7c70658bd+3151261]
+	GetHandleVerifier [0x0x7ff7c6d9185e+185662]
+	GetHandleVerifier [0x0x7ff7c6d9971f+218111]
+	GetHandleVerifier [0x0x7ff7c6d7fb14+112628]
+	GetHandleVerifier [0x0x7ff7c6d7fcc9+113065]
+	GetHandleVerifier [0x0x7ff7c6d66c98+10616]
+	BaseThreadInitThunk [0x0x7ffdbc97259d+29]
+	RtlUserThreadStart [0x0x7ffdbdb4af78+40]
+</status>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2025-07-11T14:44:50.801682" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-07-11T14:44:46.203825" elapsed="4.597857">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c6d76f95+76917]
+	GetHandleVerifier [0x0x7ff7c6d76ff0+77008]
+	(No symbol) [0x0x7ff7c6b29dea]
+	(No symbol) [0x0x7ff7c6b02191]
+	(No symbol) [0x0x7ff7c6baf83e]
+	(No symbol) [0x0x7ff7c6bcff72]
+	(No symbol) [0x0x7ff7c6ba8243]
+	(No symbol) [0x0x7ff7c6b71431]
+	(No symbol) [0x0x7ff7c6b721c3]
+	GetHandleVerifier [0x0x7ff7c704d2cd+3051437]
+	GetHandleVerifier [0x0x7ff7c7047923+3028483]
+	GetHandleVerifier [0x0x7ff7c70658bd+3151261]
+	GetHandleVerifier [0x0x7ff7c6d9185e+185662]
+	GetHandleVerifier [0x0x7ff7c6d9971f+218111]
+	GetHandleVerifier [0x0x7ff7c6d7fb14+112628]
+	GetHandleVerifier [0x0x7ff7c6d7fcc9+113065]
+	GetHandleVerifier [0x0x7ff7c6d66c98+10616]
+	BaseThreadInitThunk [0x0x7ffdbc97259d+29]
+	RtlUserThreadStart [0x0x7ffdbdb4af78+40]
+</status>
+</kw>
+<kw name="เข้าด้วยUserระดับพนักงาน" owner="main_keywords">
+<status status="NOT RUN" start="2025-07-11T14:44:50.801682" elapsed="0.000000"/>
+</kw>
+<doc>ทดสอบการยื่นคำร้อง manual ของ ปปง.1-02 กรณี ยื่นคำร้องเอง</doc>
+<status status="FAIL" start="2025-07-11T14:44:46.203825" elapsed="4.597857">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c6d76f95+76917]
+	GetHandleVerifier [0x0x7ff7c6d76ff0+77008]
+	(No symbol) [0x0x7ff7c6b29dea]
+	(No symbol) [0x0x7ff7c6b02191]
+	(No symbol) [0x0x7ff7c6baf83e]
+	(No symbol) [0x0x7ff7c6bcff72]
+	(No symbol) [0x0x7ff7c6ba8243]
+	(No symbol) [0x0x7ff7c6b71431]
+	(No symbol) [0x0x7ff7c6b721c3]
+	GetHandleVerifier [0x0x7ff7c704d2cd+3051437]
+	GetHandleVerifier [0x0x7ff7c7047923+3028483]
+	GetHandleVerifier [0x0x7ff7c70658bd+3151261]
+	GetHandleVerifier [0x0x7ff7c6d9185e+185662]
+	GetHandleVerifier [0x0x7ff7c6d9971f+218111]
+	GetHandleVerifier [0x0x7ff7c6d7fb14+112628]
+	GetHandleVerifier [0x0x7ff7c6d7fcc9+113065]
+	GetHandleVerifier [0x0x7ff7c6d66c98+10616]
+	BaseThreadInitThunk [0x0x7ffdbc97259d+29]
+	RtlUserThreadStart [0x0x7ffdbdb4af78+40]
+</status>
+</test>
+<doc>ทดสอบการยื่นคำร้อง manual ของ ปปง.1-02 กรณี ยื่นคำร้องเอง</doc>
+<status status="FAIL" start="2025-07-11T14:44:45.729960" elapsed="5.071722"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC 1-02 003">TC 1-02 003</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-11T14:44:46.172578" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\AML\ยื่นคำร้อง Manual\AMLO Variables.robot' on line 30: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-07-11T14:44:46.172578" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\AML\ยื่นคำร้อง Manual\AMLO Variables.robot' on line 40: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-07-11T14:44:46.172578" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\AML\ยื่นคำร้อง Manual\AMLO Variables.robot' on line 44: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-07-11T14:44:46.172578" level="WARN">Error in file 'D:\AML_Project\Resources\Menu_name\AML\ยื่นคำร้อง Manual\AMLO Variables.robot' on line 54: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-07-11T14:44:46.188202" level="ERROR">Error in file 'D:\AML_Project\Resources\Menu_name\AML\ViewAlert รายงาน ปปง\keywordการค้นหา.robot' on line 28: Creating keyword 'กดปุ่มตกลง' failed: Keyword with same name defined multiple times.</msg>
+<msg time="2025-07-11T14:44:50.783941" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7c6d76f95+76917]
+	GetHandleVerifier [0x0x7ff7c6d76ff0+77008]
+	(No symbol) [0x0x7ff7c6b29dea]
+	(No symbol) [0x0x7ff7c6b02191]
+	(No symbol) [0x0x7ff7c6baf83e]
+	(No symbol) [0x0x7ff7c6bcff72]
+	(No symbol) [0x0x7ff7c6ba8243]
+	(No symbol) [0x0x7ff7c6b71431]
+	(No symbol) [0x0x7ff7c6b721c3]
+	GetHandleVerifier [0x0x7ff7c704d2cd+3051437]
+	GetHandleVerifier [0x0x7ff7c7047923+3028483]
+	GetHandleVerifier [0x0x7ff7c70658bd+3151261]
+	GetHandleVerifier [0x0x7ff7c6d9185e+185662]
+	GetHandleVerifier [0x0x7ff7c6d9971f+218111]
+	GetHandleVerifier [0x0x7ff7c6d7fb14+112628]
+	GetHandleVerifier [0x0x7ff7c6d7fcc9+113065]
+	GetHandleVerifier [0x0x7ff7c6d66c98+10616]
+	BaseThreadInitThunk [0x0x7ffdbc97259d+29]
+	RtlUserThreadStart [0x0x7ffdbdb4af78+40]
+</msg>
+</errors>
+</robot>
